@@ -1,1 +1,5 @@
-title: Bhumil Soni's Site
+title: Bhumil Soni
+
+sass:
+  sass_dir: _sass
+  style: compressed # or expanded for development

@@ -1,0 +1,68 @@
+@import "variables";
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem 0;
+    background-color: transparent;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.navbar-inner {
+    display: flex;
+    align-items: center;
+    width: 60%;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: larger;
+    color: $color-light-text;
+    text-decoration: none;
+    flex-grow: 1;
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-links a {
+    margin: 0 1.6rem;
+    color: $color-light-text;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+    color: $color-link-hover;
+}
+
+.navbar-links a.current {
+    color: $color-link-active;
+}
+
+.theme-toggle, .navbar-toggler {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.theme-icon {
+    font-size: 1.1rem;
+    transition: color 0.5s ease;
+}
+
+.navbar-toggler {
+    display: none;
+}
+
+.navbar-toggler i {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.navbar-toggler.open i {
+    transform: rotate(180deg);
+}

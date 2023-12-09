@@ -1,0 +1,33 @@
+@import "variables";
+
+body.dark-theme {
+    background: $color-dark-background;
+    color: $color-dark-text;
+
+    .navbar {
+        background-color: $color-dark-background;
+    }
+
+    .navbar-brand, .navbar-links a, .theme-toggle {
+        color: $color-light-background;
+    }
+
+    .navbar-links a {
+        transition: color 0.3s ease;
+
+        &:hover, &.current {
+            color: $color-link-hover;
+        }
+    }
+
+    .theme-icon {
+        color: $color-dark-text;
+    }
+
+    .navbar-links {
+        background-color: $color-dark-background;
+        a {
+            color: $color-light-background;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+@import "variables";
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: $color-light-background;
+    color: $color-light-text;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+.content-wrapper {
+    max-width: 60%;
+    margin: 0 auto;
+    padding: 1rem;
+}
