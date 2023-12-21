@@ -1,4 +1,4 @@
-@import "variables";
+@import "colors";
 
 body.dark-theme {
     background: $color-dark-background;
@@ -16,7 +16,7 @@ body.dark-theme {
         transition: color 0.3s ease;
 
         &:hover, &.current {
-            color: $color-link-hover;
+            color: $color-primary;
         }
     }
 

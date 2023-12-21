@@ -1,4 +1,4 @@
-@import "variables";
+@import "colors";
 @import "responsive";
 
 .navbar {
@@ -107,12 +107,8 @@
     }
 }
 
-.navbar-links a:hover {
-    color: $color-link-hover;
-}
-
-.navbar-links a.current {
-    color: $color-link-active;
+.navbar-links a:hover, a.current {
+    color: $color-primary;
 }
 
 .theme-toggle, .navbar-toggler {
