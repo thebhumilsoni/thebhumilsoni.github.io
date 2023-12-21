@@ -1,0 +1,7 @@
+$viewport-small: 768px;
+$viewport-medium: 992px;
+$viewport-large: 1200px;
+
+@mixin viewport-small { @media (min-width: $viewport-small) { @content; } }
+@mixin viewport-medium { @media (min-width: $viewport-medium) { @content; } }
+@mixin viewport-large { @media (min-width: $viewport-large) { @content; } }

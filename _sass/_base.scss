@@ -1,4 +1,5 @@
 @import "variables";
+@import "responsive";
 
 body {
     margin: 0;
@@ -22,15 +23,15 @@ h1, h2, h3, h4, h5, h6 {
     box-sizing: border-box;
     overflow-x: hidden;
 
-    @media (min-width: 768px) {
+    @include viewport-small {
         padding: max(1.5rem, 1vw);
     }
 
-    @media (min-width: 992px) {
+    @include viewport-medium {
         padding: max(1.5rem, 1.5vw);
     }
 
-    @media (min-width: 1200px) {
+    @include viewport-large {
         max-width: 1170px;
         padding: max(1.5rem, 2vw);
     }
