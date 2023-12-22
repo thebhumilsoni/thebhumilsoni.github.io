@@ -1,0 +1,117 @@
+$font-primary: 'Lato', sans-serif;
+$font-primary-light: 300;
+$font-primary-regular: 400;
+$font-primary-regular-italic: 400;
+$font-primary-bold: 700;
+
+@mixin font-light-primary {
+    font-family: $font-primary;
+    font-weight: $font-primary-light;
+}
+
+@mixin font-regular-primary {
+    font-family: $font-primary;
+    font-weight: $font-primary-regular;
+}
+
+@mixin font-bold-primary {
+    font-family: $font-primary;
+    font-weight: $font-primary-bold;
+}
+
+body {
+    @include font-regular-primary;
+    font-size: 1.05rem;
+    line-height: 1.6;
+
+    @include viewport-small {
+        font-size: 1.075rem;
+    }
+
+    @include viewport-medium {
+        font-size: 1.1rem;
+    }
+
+    @include viewport-large {
+        font-size: 1.125rem;
+    }
+}
+
+h1 {
+    @include font-bold-primary;
+    font-size: 2.0rem;
+
+    @include viewport-small {
+        font-size: 2.05rem;
+    }
+
+    @include viewport-medium {
+        font-size: 2.1rem;
+    }
+
+    @include viewport-large {
+        font-size: 2.2rem;
+    }
+}
+
+h2 {
+    @include font-bold-primary;
+    font-size: 1.7rem;
+
+    @include viewport-small {
+        font-size: 1.8rem;
+    }
+
+    @include viewport-medium {
+        font-size: 1.9rem;
+    }
+}
+
+h3 {
+    @include font-regular-primary;
+    font-size: 1.5rem;
+
+    @include viewport-small {
+        font-size: 1.6rem;
+    }
+
+    @include viewport-medium {
+        font-size: 1.7rem;
+    }
+}
+
+h4 {
+    @include font-regular-primary;
+    font-size: 1.25rem;
+
+    @include viewport-small {
+        font-size: 1.5rem;
+    }
+}
+
+h5 {
+    @include font-regular-primary;
+    font-size: 1rem;
+
+    @include viewport-small {
+        font-size: 1.25rem;
+    }
+}
+
+h6 {
+    @include font-regular-primary;
+    font-size: 0.875rem;
+
+    @include viewport-small {
+        font-size: 1rem;
+    }
+}
+
+p, blockquote, a, li {
+    @include font-regular-primary;
+}
+
+blockquote {
+    font-size: 0.9em;
+    font-style: italic;
+}
