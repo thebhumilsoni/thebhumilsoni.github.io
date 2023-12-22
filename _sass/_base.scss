@@ -2,18 +2,9 @@
 @import "responsive";
 
 body {
-    margin: 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background: $color-light-background;
     color: $color-light-text;
-    font-size: 16px;
-    line-height: 1.5;
-}
-
-h1, h2, h3, h4, h5, h6 {
     margin: 0;
-    padding: 0;
-    line-height: 1.2;
 }
 
 .content-wrapper {
@@ -35,4 +26,59 @@ h1, h2, h3, h4, h5, h6 {
         max-width: 1170px;
         padding: max(1.5rem, 2vw);
     }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    padding: 0;
+}
+
+ul, ol {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 0.5em;
+}
+
+a {
+    color: $color-primary;
+    text-decoration: none;
+    
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+table {
+    border-collapse: separate;
+    border: solid $color-primary-light 1px;
+    border-radius: 10px;
+    width: auto;
+    margin: 0 auto; // Center table
+
+    th, td {
+        border-left: solid $color-primary-light 1px;
+        border-top: solid $color-primary-light 1px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    th {
+        border-top: none;
+    }
+
+    td:first-child, th:first-child {
+        border-left: none;
+    }
+}
+
+blockquote {
+    padding-left: 15px;
+    margin-left: 0;
+    border-left: 5px solid $color-primary-light;
+    display: block;
+    position: relative;
+    overflow: hidden;
 }
