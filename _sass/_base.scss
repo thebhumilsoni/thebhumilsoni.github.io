@@ -2,8 +2,8 @@
 @import "responsive";
 
 body {
-    background: $color-light-background;
-    color: $color-light-text;
+    background: var(--background-color);
+    color: var(--text-color);
     margin: 0;
 }
 
@@ -29,6 +29,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
+    color: var(--heading-text-color);
     margin-top: 0.5em;
     margin-bottom: 0.5em;
     padding: 0;
@@ -43,7 +44,7 @@ li {
 }
 
 a {
-    color: $color-primary;
+    color: var(--link-color);
     text-decoration: none;
     
     &:hover {
@@ -53,14 +54,14 @@ a {
 
 table {
     border-collapse: separate;
-    border: solid $color-primary-light 1px;
+    border: solid var(--table-border-color) 1px;
     border-radius: 10px;
     width: auto;
     margin: 0 auto; // Center table
 
     th, td {
-        border-left: solid $color-primary-light 1px;
-        border-top: solid $color-primary-light 1px;
+        border-left: solid var(--th-border-color) 1px;
+        border-top: solid var(--td-border-color) 1px;
         padding: 10px;
         text-align: center;
     }
@@ -77,7 +78,7 @@ table {
 blockquote {
     padding-left: 15px;
     margin-left: 0;
-    border-left: 5px solid $color-primary-light;
+    border-left: 5px solid var(--primary-light-color);
     display: block;
     position: relative;
     overflow: hidden;

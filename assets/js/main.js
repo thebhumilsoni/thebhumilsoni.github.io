@@ -16,19 +16,18 @@ const updateThemeIcon = (isDarkMode) => {
 const initializeThemeToggle = () => {
   const themeToggle = document.querySelector('.theme-toggle');
   themeToggle.addEventListener('click', () => {
-    const isDarkMode = document.body.classList.toggle('dark-theme');
-    localStorage.setItem('theme', isDarkMode ? 'dark-theme' : '');
+    const isDarkMode = document.documentElement.toggleAttribute('dark');
+    localStorage.setItem('theme', isDarkMode ? 'dark' : '');
     updateThemeIcon(isDarkMode);
   });
 };
 
 const applySavedTheme = () => {
   const savedTheme = localStorage.getItem('theme');
-  const isDarkMode = savedTheme === 'dark-theme';
-  if (isDarkMode) {
-    document.body.classList.add(savedTheme);
+  if (savedTheme === 'dark') {
+    document.documentElement.setAttribute('dark', '');
   }
-  updateThemeIcon(isDarkMode);
+  updateThemeIcon(savedTheme === 'dark');
 };
 
 document.addEventListener('DOMContentLoaded', () => {

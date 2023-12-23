@@ -1,6 +1,39 @@
-$color-light-background: #FFFFFF;
-$color-light-text: #1B1B1B;
-$color-dark-background: #18181A;
-$color-dark-text: #DED8D8;
-$color-primary: #EB4C42;
-$color-primary-light: lighten($color-primary, 12%)
+:root {
+    --background-color: #ffffff;
+    --text-color: #1b1b1b;
+    --heading-text-color: #000000;
+    --primary-color: #eb4c42;
+    --primary-light-color: #fb6459;
+    --link-color: var(--primary-color);
+    --icon-color: var(--text-color);
+
+    // table colors
+    --table-border-color: var(--primary-light-color);
+    --th-border-color: var(--primary-light-color);
+    --td-border-color: var(--primary-light-color);
+
+    // navigation bar colors
+    --navbar-background-color: transaprent;
+    --navbar-title-color: var(--heading-text-color);
+    --navbar-links-color: var(--text-color);
+}
+  
+:root[dark] {
+    --background-color: #18181a;
+    --text-color: #ded8d8;
+    --heading-text-color: #f2f2f2;
+    --primary-color: #eb4c42;
+    --primary-light-color: #fb6459;
+    --link-color: var(--primary-color);
+    --icon-color: var(--text-color);
+
+    // table colors
+    --table-border-color: var(--primary-light-color);
+    --th-border-color: var(--primary-light-color);
+    --td-border-color: var(--primary-light-color);
+
+    // navigation bar colors
+    --navbar-background-color: var(--background-color);
+    --navbar-title-color: var(--heading-text-color);
+    --navbar-links-color: var(--text-color);
+}
