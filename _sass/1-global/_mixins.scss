@@ -1,0 +1,16 @@
+@import "1-global/variables";
+
+@mixin viewport-small { 
+    @media (min-width: $viewport-small) 
+    { @content; } 
+}
+
+@mixin viewport-medium { 
+    @media (min-width: $viewport-medium) 
+    { @content; } 
+}
+
+@mixin viewport-large { 
+    @media (min-width: $viewport-large) 
+    { @content; } 
+}

@@ -1,5 +1,4 @@
-@import "colors";
-@import "responsive";
+@import "1-global/mixins";
 
 body {
     background: var(--background-color);
