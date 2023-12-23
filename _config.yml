@@ -3,3 +3,8 @@ title: Bhumil
 sass:
   sass_dir: _sass
   style: compressed # or expanded for development
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
