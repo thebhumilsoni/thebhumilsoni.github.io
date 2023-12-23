@@ -13,15 +13,15 @@ body {
     box-sizing: border-box;
     overflow-x: hidden;
 
-    @include viewport-small {
+    @include for-medium-up {
         padding: max(1.5rem, 1vw);
     }
 
-    @include viewport-medium {
+    @include for-large-up {
         padding: max(1.5rem, 1.5vw);
     }
 
-    @include viewport-large {
+    @include for-xlarge-up {
         max-width: 1170px;
         padding: max(1.5rem, 2vw);
     }

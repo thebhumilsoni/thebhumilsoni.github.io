@@ -17,15 +17,15 @@
     gap: 2rem;
     box-sizing: border-box;
 
-    @include viewport-small {
+    @include for-medium-up {
         padding: max(1.5rem, 1vw);
     }
     
-    @include viewport-medium {
+    @include for-large-up {
         padding: max(1.5rem, 1.5vw);
     }
 
-    @include viewport-large {
+    @include for-xlarge-up {
         max-width: 1170px;
         margin-left: auto;
         margin-right: auto;
@@ -44,11 +44,11 @@
         text-decoration: none;
     }
 
-    @include viewport-small {
+    @include for-medium-up {
         font-size: 1.85em;
     }
 
-    @include viewport-medium {
+    @include for-large-up {
         font-size: 1.90em;
     }
 }
@@ -76,7 +76,7 @@
         visibility: visible;
     }
 
-    @include viewport-small {
+    @include for-medium-up {
         display: flex;
         opacity: 1;
         visibility: visible;
@@ -102,7 +102,7 @@
     text-align: center;
     transition: color 0.3s ease;
 
-    @include viewport-small {
+    @include for-medium-up {
         display: inline-block;
         padding: 0;
         margin: 0;
@@ -128,7 +128,7 @@
     font-size: 1.5rem;
     color: inherit;
 
-    @include viewport-small {
+    @include for-medium-up {
         display: none;
     }
 }
