@@ -6,9 +6,11 @@
         <a href="{{ site.baseurl }}{{ item.link }}" class="{% if page.url == item.link %}current{% endif %}">{{ item.name }}</a>
       {% endfor %}
     </div>
-    <button class="theme-toggle">
-      <i class="theme-icon fas fa-sun"></i> <!-- Theme icon, dynamically updated -->
-    </button>
+    <div class="navbar-shortcuts">
+      <button class="theme-toggle">
+        <i class="theme-icon fas fa-sun"></i>
+      </button>
+    </div>
     <button class="navbar-toggler">
       <i class="fas fa-bars"></i>
     </button>
