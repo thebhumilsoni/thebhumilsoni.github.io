@@ -1,0 +1,3 @@
+{% assign aos_effect = include.aos | default: "zoom-in" %}
+{% assign class = include.class | default: "" %}
+<img src="{{ include.src }}" alt="{{ include.alt }}" class="{{ class }}" loading="lazy" data-aos="{{ aos_effect }}">
