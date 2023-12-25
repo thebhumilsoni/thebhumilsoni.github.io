@@ -40,7 +40,7 @@
 
 .navbar-title {
     font-weight: bold;
-    font-size: 1.7em;
+    font-size: 1.4em;
     color: var(--navbar-title-color);
     text-decoration: none;
     flex-grow: 1;
@@ -50,11 +50,11 @@
     }
 
     @include for-medium-up {
-        font-size: 1.85em;
+        font-size: 1.55em;
     }
 
     @include for-large-up {
-        font-size: 1.90em;
+        font-size: 1.7em;
     }
 }
 
