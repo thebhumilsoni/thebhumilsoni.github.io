@@ -2,7 +2,7 @@
 @import "2-design-system/typography";
 
 .highlight {
-  border-radius: 10px;
+  border-radius: $border-radius;
   padding-left: 0.6em;
   padding-right: 0.6em;
   overflow-x: auto;

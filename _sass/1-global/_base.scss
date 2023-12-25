@@ -32,7 +32,7 @@ body {
     height: auto;
     display: block;
     margin: 0 auto;
-    border-radius: 10px;
+    border-radius: $border-radius;
 }
 
 .content-wrapper img.portrait {
@@ -77,7 +77,7 @@ a {
 table {
     border-collapse: separate;
     border: solid var(--table-border-color) 1px;
-    border-radius: 10px;
+    border-radius: $border-radius;
     width: auto;
     margin: 0 auto; // Center table
 
