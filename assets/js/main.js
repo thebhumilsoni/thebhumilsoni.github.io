@@ -30,9 +30,19 @@ const applySavedTheme = () => {
   updateThemeIcon(savedTheme === 'dark');
 };
 
+const adjustContentWrapperPadding = () => {
+  const navbar = document.querySelector('.navbar');
+  const contentWrapper = document.querySelector('.content-wrapper');
+  if (navbar && contentWrapper) {
+    const navbarHeight = navbar.offsetHeight;
+    contentWrapper.style.paddingTop = `${navbarHeight}px`;
+  }
+};
+
 document.addEventListener('DOMContentLoaded', () => {
   applySavedTheme();
   initializeThemeToggle();
+  adjustContentWrapperPadding();
   const navbarToggler = document.querySelector('.navbar-toggler');
   navbarToggler.addEventListener('click', toggleMobileNav);
 });
@@ -49,4 +59,5 @@ window.addEventListener('resize', () => {
   } else {
       navbarTogglerIcon.className = navbarLinks.classList.contains('open') ? 'fas fa-times' : 'fas fa-bars';
   }
+  adjustContentWrapperPadding();
 });

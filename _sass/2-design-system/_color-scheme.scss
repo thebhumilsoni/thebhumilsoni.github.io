@@ -20,6 +20,7 @@ $primary-light-color: lighten($primary-color, 10%);
     --navbar-background-color: var(--background-color);
     --navbar-title-color: var(--heading-text-color);
     --navbar-links-color: var(--text-color);
+    --navbar-shadow-color: rgba(0, 0, 0, 0.1);
 }
   
 :root[dark] {
@@ -41,4 +42,5 @@ $primary-light-color: lighten($primary-color, 10%);
     --navbar-background-color: var(--background-color);
     --navbar-title-color: var(--heading-text-color);
     --navbar-links-color: var(--text-color);
+    --navbar-shadow-color: rgba(255, 255, 255, 0.1);
 }

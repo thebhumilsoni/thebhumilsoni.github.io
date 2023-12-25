@@ -1,11 +1,16 @@
 @import "1-global/mixins";
 
 .navbar {
-    background-color: var(--navbar-background-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    padding: 0;
     width: 100%;
     display: flex;
     justify-content: center;
-    padding: 0;
+    background-color: var(--navbar-background-color);
+    box-shadow: 0 2px 4px var(--navbar-shadow-color);
 }
 
 .navbar-inner {
@@ -13,23 +18,23 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 1.5rem;
+    padding: 1rem 1.5rem;
     gap: 2rem;
     box-sizing: border-box;
 
     @include for-medium-up {
-        padding: max(1.5rem, 1vw);
+        padding: max(1rem, 0.5vw) max(1.5rem, 1vw);
     }
     
     @include for-large-up {
-        padding: max(1.5rem, 1.5vw);
+        padding: max(1rem, 0.75vw) max(1.5rem, 1.5vw);
     }
 
     @include for-xlarge-up {
         max-width: 1170px;
         margin-left: auto;
         margin-right: auto;
-        padding: max(1.5rem, 2vw);
+        padding: max(1rem, 1vw) max(1.5rem, 2vw);
     }
 }
 

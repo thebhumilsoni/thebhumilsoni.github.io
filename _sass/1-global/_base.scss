@@ -9,21 +9,21 @@ body {
 .content-wrapper {
     width: 100%;
     margin: 0 auto;
-    padding: 1.5rem;
+    padding: 1rem 1.5rem;
     box-sizing: border-box;
     overflow-x: hidden;
 
     @include for-medium-up {
-        padding: max(1.5rem, 1vw);
+        padding: max(1rem, 0.5vw) max(1.5rem, 1vw);
     }
 
     @include for-large-up {
-        padding: max(1.5rem, 1.5vw);
+        padding: max(1rem, 0.75vw) max(1.5rem, 1.5vw);
     }
 
     @include for-xlarge-up {
         max-width: 1170px;
-        padding: max(1.5rem, 2vw);
+        padding: max(1rem, 1vw) max(1.5rem, 2vw);
     }
 }
 
