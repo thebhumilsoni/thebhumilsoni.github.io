@@ -10,6 +10,9 @@ title: Posts
 The future of **technology** is a vast and exciting field, constantly evolving and pushing the boundaries of what we believe to be possible. From the development of artificial intelligence to the exploration of space, the *pace of technological advancement* is accelerating at an <u>unprecedented rate</u>. The future of **technology** is a vast and exciting field, constantly evolving and pushing the boundaries of what we believe to be possible. From the development of artificial intelligence to the exploration of space, the *pace of technological advancement* is accelerating at an <u>unprecedented rate</u>.
 
 ### What Lies Ahead
+
+![sample image three](/assets/image/sample-image-3.jpg)
+
 As we gaze into the future, several key areas emerge as hotbeds of innovation and development:
 
 #### Artificial Intelligence (AI)
@@ -31,6 +34,9 @@ Advancements in robotics are leading us towards a more automated world, where ma
 ---
 
 ## The Role of Quantum Computing
+
+![sample image one](/assets/image/sample-image-1.jpg)
+
 Quantum computing promises to solve complex problems that are currently beyond the reach of classical computers.
 
 ### Impact on Cryptography

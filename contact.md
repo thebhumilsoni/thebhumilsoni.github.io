@@ -8,6 +8,8 @@ Explore the **mythical lands** where legends come *alive* and <u>adventure</u> b
 
 ## Land of Giants
 
+![sample image four](/assets/image/sample-image-4.png)
+
 In this realm, gigantic beings roam the land:
 
 - Titans towering over mountains

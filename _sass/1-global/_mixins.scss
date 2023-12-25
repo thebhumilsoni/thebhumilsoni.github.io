@@ -1,5 +1,11 @@
 @import "1-global/variables";
 
+@mixin for-small-up { 
+    @media (min-width: $breakpoint-small-up) { 
+        @content; 
+    } 
+}
+
 @mixin for-medium-up { 
     @media (min-width: $breakpoint-medium-up) { 
         @content; 

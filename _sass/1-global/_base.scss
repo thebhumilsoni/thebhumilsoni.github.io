@@ -27,6 +27,28 @@ body {
     }
 }
 
+.content-wrapper img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.content-wrapper img.portrait {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin: 0 auto;
+
+    @include for-small-up {
+        width: 50%;
+    }
+
+    @include for-medium-up {
+        width: 35%;
+    }
+}
+
 h1, h2, h3, h4, h5, h6 {
     color: var(--heading-text-color);
     margin-top: 0.5em;
