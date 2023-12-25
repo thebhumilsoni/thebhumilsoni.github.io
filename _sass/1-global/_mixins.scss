@@ -23,3 +23,15 @@
         @content; 
     } 
 }
+
+@mixin icon-style {
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+
+    i {
+        font-size: 1.2rem;
+        color: var(--icon-color);
+    }
+}

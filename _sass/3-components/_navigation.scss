@@ -98,14 +98,20 @@
 
             @include for-medium-up {
                 flex: 1;
+                gap: 1.75rem;
+            }
+
+            @include for-large-up {
+                gap: 2rem;
+            }
+
+            @include for-large-up {
+                gap: 2.25rem;
             }
         }
 
         .theme-toggle, .navbar-toggler {
-            padding: 0;
-            border: none;
-            background: none;
-            cursor: pointer;
+            @include icon-style;
         }
 
         .theme-toggle i {
