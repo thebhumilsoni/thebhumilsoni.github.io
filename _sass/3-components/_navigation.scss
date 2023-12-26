@@ -2,7 +2,7 @@
 @import "1-global/mixins";
 
 .navbar {
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     z-index: 10;
