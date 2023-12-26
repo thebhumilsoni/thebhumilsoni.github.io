@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Blog
+title: Posts
+permalink: /posts/
 ---
 <h1>Archive</h1>
 {% for post in site.posts %}

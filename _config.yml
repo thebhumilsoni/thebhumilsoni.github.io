@@ -8,3 +8,8 @@ markdown: kramdown
 kramdown:
   input: GFM
   syntax_highlighter: rouge
+
+include:
+  - '_pages'
+
+permalink: /posts/:categories/:year/:month/:day/:title.html
