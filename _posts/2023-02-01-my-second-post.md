@@ -1,8 +1,9 @@
 ---
 layout: post
 title: "My Second Post"
-date: 2023-022-01 12:00:00 -0000
+date: 2023-02-01 12:00:00 -0000
 categories: category1
+header: /assets/images/common-post-header.png
 ---
 
 The future of **technology** is a vast and exciting field, constantly evolving and pushing the boundaries of what we believe to be possible. From the development of artificial intelligence to the exploration of space, the *pace of technological advancement* is accelerating at an <u>unprecedented rate</u>. The future of **technology** is a vast and exciting field, constantly evolving and pushing the boundaries of what we believe to be possible. From the development of artificial intelligence to the exploration of space, the *pace of technological advancement* is accelerating at an <u>unprecedented rate</u>.
