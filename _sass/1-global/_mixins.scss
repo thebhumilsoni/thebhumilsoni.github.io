@@ -35,3 +35,22 @@
         color: var(--icon-color);
     }
 }
+
+@mixin base-image-style {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: $border-radius;
+}
+
+@mixin base-content-wrapper-style {
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    overflow-x: hidden;
+
+    img {
+        @include base-image-style;
+    }
+}
