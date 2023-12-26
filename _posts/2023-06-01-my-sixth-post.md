@@ -2,7 +2,7 @@
 layout: post
 title: "My Sixth Post"
 date: 2023-06-01 12:00:00 -0000
-categories: category1
+tags: [Android, Jetpack Compose]
 header: /assets/images/common-post-header.png
 ---
 

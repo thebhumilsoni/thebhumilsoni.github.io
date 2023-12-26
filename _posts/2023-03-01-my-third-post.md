@@ -2,7 +2,7 @@
 layout: post
 title: "My Third Post"
 date: 2023-03-01 12:00:00 -0000
-categories: category1
+tags: [Swift, SwiftUI]
 header: /assets/images/common-post-header.png
 ---
 

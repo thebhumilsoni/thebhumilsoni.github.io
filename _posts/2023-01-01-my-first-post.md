@@ -2,7 +2,7 @@
 layout: post
 title: "My First Post"
 date: 2023-01-01 12:00:00 -0000
-categories: category1
+tags: [iOS, Android]
 header: /assets/images/common-post-header.png
 ---
 

@@ -1,5 +1,60 @@
-.post-header-image img {
-    width: 100%;
-    height: auto;
-    display: block;
+.post-header {
+    @include base-content-wrapper-style;
+    max-width: 1300px;
+    margin-top: 1.5rem;
+    padding: 0rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    .post-title {
+        margin: 0;
+    }
+
+    .post-meta {
+        margin: 0;
+
+        .post-date {
+            font-size: large;
+        } 
+    }
+
+    .post-tags {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin: 0;
+    }
+
+    .tag {
+        display: inline-block;
+        padding: 0.4rem 1.6rem;
+        background-color: var(--tag-background-color);
+        border: 1px solid var(--tag-border-color);
+        color: var(--tag-text-color);
+        border-radius: $border-radius;
+    }
+
+    .post-header-image img {
+        @include base-image-style;
+    }
+}
+  
+.post-content-wrapper {
+    @include base-content-wrapper-style;
+    max-width: 900px;
+    padding: 0rem 1.5rem;
+
+    @include for-medium-up {
+        margin-top: 0.75rem;
+    }
+
+    @include for-large-up {
+        margin-top: 1.5rem;
+    }
+
+    @include for-xlarge-up {
+        margin-top: 2rem;
+    }
 }

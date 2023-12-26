@@ -2,7 +2,7 @@
 layout: post
 title: "My Tenth Post"
 date: 2023-10-01 12:00:00 -0000
-categories: category1
+tags: [Android, Android Jetpack, Kotlin, Dagger-Hilt]
 header: /assets/images/common-post-header.png
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: "My Second Post"
 date: 2023-02-01 12:00:00 -0000
-categories: category1
+tags: [iOS, Swift]
 header: /assets/images/common-post-header.png
 ---
 
