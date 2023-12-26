@@ -9,7 +9,7 @@ The future of **technology** is a vast and exciting field, constantly evolving a
 
 ### What Lies Ahead
 
-{% include image.html src="/assets/image/sample-image-3.jpg" alt="Sample image three" %}
+{% include image.html src="/assets/images/sample-image-3.jpg" alt="Sample image three" %}
 
 As we gaze into the future, several key areas emerge as hotbeds of innovation and development:
 
@@ -33,7 +33,7 @@ Advancements in robotics are leading us towards a more automated world, where ma
 
 ## The Role of Quantum Computing
 
-{% include image.html src="/assets/image/sample-image-1.jpg" alt="Sample image one" aos="fade-up" %}
+{% include image.html src="/assets/images/sample-image-1.jpg" alt="Sample image one" aos="fade-up" %}
 
 Quantum computing promises to solve complex problems that are currently beyond the reach of classical computers.
 
