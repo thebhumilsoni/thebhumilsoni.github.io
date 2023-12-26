@@ -42,14 +42,14 @@ body {
 
 h1 {
     @include font-bold-primary;
-    font-size: 2.0rem;
+    font-size: 1.7rem;
 
     @include for-medium-up {
-        font-size: 2.05rem;
+        font-size: 1.9rem;
     }
 
     @include for-large-up {
-        font-size: 2.1rem;
+        font-size: 2.05rem;
     }
 
     @include for-xlarge-up {
@@ -59,20 +59,20 @@ h1 {
 
 h2 {
     @include font-bold-primary;
-    font-size: 1.7rem;
+    font-size: 1.55rem;
 
     @include for-medium-up {
-        font-size: 1.8rem;
+        font-size: 1.7rem;
     }
 
     @include for-large-up {
-        font-size: 1.9rem;
+        font-size: 1.85rem;
     }
 }
 
 h3 {
     @include font-regular-primary;
-    font-size: 1.5rem;
+    font-size: 1.45rem;
 
     @include for-medium-up {
         font-size: 1.6rem;
