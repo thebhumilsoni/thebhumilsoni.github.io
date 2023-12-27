@@ -22,9 +22,19 @@
     .post-tags {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         gap: 1rem;
         margin: 0;
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        scrollbar-width: auto;
+        scrollbar-color: auto;
     }
 
     .tag {
@@ -34,6 +44,7 @@
         border: 1px solid var(--tag-border-color);
         color: var(--tag-text-color);
         border-radius: $border-radius;
+        white-space: nowrap;
     }
 
     .post-header-image img {
