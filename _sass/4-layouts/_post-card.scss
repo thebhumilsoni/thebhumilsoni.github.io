@@ -13,6 +13,7 @@
     box-shadow: 0px 4px 10px var(--post-card-shadow-color);
     text-decoration: none;
     color: inherit;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 
     @include for-medium-up {
         grid-template-columns: 40% 1fr;
@@ -21,6 +22,8 @@
 
     &:hover {
         text-decoration: none;
+        transform: scale(1.03);
+        box-shadow: 0 4px 8px var(--post-card-shadow-color);
     }
 }
 
