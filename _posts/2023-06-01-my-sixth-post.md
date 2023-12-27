@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "My Sixth Post"
+summary: "Navigating the challenges and opportunities in the fast-paced world of startup culture."
 date: 2023-06-01 12:00:00 -0000
 tags: [Android, Jetpack Compose]
 header: /assets/images/common-post-header.png

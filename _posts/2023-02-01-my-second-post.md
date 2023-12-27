@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "My Second Post"
+summary: "Breaking down the complexities of machine learning algorithms and their real-world applications."
 date: 2023-02-01 12:00:00 -0000
 tags: [iOS, Swift]
 header: /assets/images/common-post-header.png

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "My Tenth Post"
+summary: "A deep dive into the world of artificial intelligence and its transformative impact on industries worldwide."
 date: 2023-10-01 12:00:00 -0000
 tags: [Android, Android Jetpack, Kotlin, Dagger-Hilt]
 header: /assets/images/common-post-header.png

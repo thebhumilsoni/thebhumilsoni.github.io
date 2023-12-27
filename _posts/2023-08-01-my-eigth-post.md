@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "My Eigth Post"
+summary: "Unveiling the secrets of successful remote work, with practical tips for productivity and work-life balance."
 date: 2023-08-01 12:00:00 -0000
 tags: [iOS, Swift, SwiftUI]
 header: /assets/images/common-post-header.png

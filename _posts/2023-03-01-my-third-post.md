@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "My Third Post"
+summary: "Understanding the impact of virtual reality on entertainment and education, and its future prospects."
 date: 2023-03-01 12:00:00 -0000
 tags: [Swift, SwiftUI]
 header: /assets/images/common-post-header.png

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "My Eleventh Post"
+summary: "Exploring the latest trends in sustainable technology, highlighting innovative solutions for a greener future."
 date: 2023-11-01 12:00:00 -0000
 tags: [Lifestyle, Travel]
 header: /assets/images/common-post-header.png

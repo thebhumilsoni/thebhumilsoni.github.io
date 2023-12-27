@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "My First Post"
+summary: "Exploring the intersection of technology and healthcare: innovations that are revolutionizing patient care."
 date: 2023-01-01 12:00:00 -0000
 tags: [iOS, Android]
 header: /assets/images/common-post-header.png

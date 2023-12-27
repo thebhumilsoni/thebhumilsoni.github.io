@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "My Last Post Which is About How To Create Jekyll Website From Scratch w/o Any Experience."
+summary: "This posts talks about creating static website using Jekyll."
 date: 2023-12-01 12:00:00 -0000
 tags: [Android, iOS, Kotlin]
 header: /assets/images/common-post-header.png

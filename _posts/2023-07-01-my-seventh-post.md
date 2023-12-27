@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "My Seventh Post"
+summary: "Discover the evolution of mobile app development and its growing influence in the digital era."
 date: 2023-07-01 12:00:00 -0000
 tags: [Android, Jetpack Compose, Kotlin]
 header: /assets/images/common-post-header.png

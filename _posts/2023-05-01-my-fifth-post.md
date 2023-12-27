@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "My Fifth Post"
+summary: "An insightful analysis of the future of blockchain technology and its potential beyond cryptocurrencies."
 date: 2023-05-01 12:00:00 -0000
 tags: [Android, Jetpack Compose, Kotlin, Dagger-Hilt]
 header: /assets/images/common-post-header.png
