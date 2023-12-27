@@ -2,6 +2,7 @@
 layout: post
 title: "My Ninth Post"
 date: 2023-09-01 12:00:00 -0000
+tags: [Mobile, Portfolio, Responsive]
 header: /assets/images/common-post-header.png
 ---
 

@@ -13,6 +13,9 @@ $primary-light-color: lighten($primary-color, 10%);
     --tag-background-color: var(--primary-light-color);
     --tag-text-color: #ffffff;
 
+    --post-card-background-color: var(--background-color);
+    --post-card-shadow-color: rgba(0, 0, 0, 0.2);
+
     // tag colors
     --tag-background-color: var(--primary-color);
     --tag-border-color: transparent;
@@ -41,6 +44,9 @@ $primary-light-color: lighten($primary-color, 10%);
     --syntax-highlighter-background: #181717;
     --tag-background-color: var(--primary-light-color);
     --tag-text-color: #ffffff;
+
+    --post-card-background-color: var(--background-color);
+    --post-card-shadow-color: rgba(255, 255, 255, 0.2);
 
     // tag colors
     --tag-background-color: #232224;
