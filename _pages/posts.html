@@ -7,7 +7,7 @@ permalink: /posts/
 <div class="posts-grid">
   {% for post in site.posts %}
     <a href="{{ post.url }}" class="post-card">
-      <div class="post-card-image" style="background-image: url('{{ post.header }}');"></div>
+      <div class="post-card-image" style="background-image: url('{{ post.header }}');" loading="lazy"></div>
       <div class="post-card-details">
         <div class="post-card-meta">
           <time class="post-card-date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d %B %Y" }}</time>

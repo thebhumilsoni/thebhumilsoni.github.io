@@ -12,6 +12,7 @@
     }
 
     .post-meta {
+        color: var(--post-meta-color);
         margin: 0;
 
         .post-date {
@@ -39,7 +40,7 @@
 
     .tag {
         display: inline-block;
-        padding: 0.4rem 1.6rem;
+        padding: 0.25rem 1.25rem;
         background-color: var(--tag-background-color);
         border: 1px solid var(--tag-border-color);
         color: var(--tag-text-color);

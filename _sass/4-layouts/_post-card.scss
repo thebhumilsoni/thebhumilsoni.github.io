@@ -10,7 +10,6 @@
     border-radius: $border-radius;
     overflow: hidden;
     background-color: var(--post-card-background-color);
-    box-shadow: 0px 4px 10px var(--post-card-shadow-color);
     text-decoration: none;
     color: inherit;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -22,7 +21,7 @@
 
     &:hover {
         text-decoration: none;
-        transform: scale(1.03);
+        transform: scale(1.02);
         box-shadow: 0 4px 8px var(--post-card-shadow-color);
     }
 }
@@ -31,6 +30,7 @@
     background-size: cover;
     background-position: center;
     min-height: 200px;
+    border-radius: $border-radius;
 }
 
 .post-card-details {
@@ -42,6 +42,7 @@
 }
 
 .post-card-meta {
+    color: var(--post-meta-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -52,7 +53,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    gap: 0.5rem;
+    gap: 0.8rem;
     overflow-x: auto;
     overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
@@ -80,6 +81,7 @@
 .post-card-title {
     margin: 0;
     font-weight: bold;
+    font-size: large;
 }
 
 .post-card-summary {
