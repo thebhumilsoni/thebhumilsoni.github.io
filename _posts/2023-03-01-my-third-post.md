@@ -4,7 +4,7 @@ title: "My Third Post"
 summary: "Understanding the impact of virtual reality on entertainment and education, and its future prospects."
 date: 2023-03-01 12:00:00 -0000
 tags: [Swift, SwiftUI]
-header: /assets/images/common-post-header.png
+header: /assets/images/post/post-header-four.jpg
 ---
 
 The future of **technology** is a vast and exciting field, constantly evolving and pushing the boundaries of what we believe to be possible. From the development of artificial intelligence to the exploration of space, the *pace of technological advancement* is accelerating at an <u>unprecedented rate</u>. The future of **technology** is a vast and exciting field, constantly evolving and pushing the boundaries of what we believe to be possible. From the development of artificial intelligence to the exploration of space, the *pace of technological advancement* is accelerating at an <u>unprecedented rate</u>.
@@ -35,7 +35,7 @@ Advancements in robotics are leading us towards a more automated world, where ma
 
 ## The Role of Quantum Computing
 
-{% include image.html src="/assets/images/sample-image-1.jpg" alt="Sample image one" aos="fade-up" %}
+{% include image.html src="/assets/images/sample-image-1.jpg" alt="Sample image one" %}
 
 Quantum computing promises to solve complex problems that are currently beyond the reach of classical computers.
 

@@ -4,7 +4,7 @@ title: "My First Post"
 summary: "Exploring the intersection of technology and healthcare: innovations that are revolutionizing patient care."
 date: 2023-01-01 12:00:00 -0000
 tags: [iOS, Android]
-header: /assets/images/common-post-header.png
+header: /assets/images/post/post-header-six.jpg
 ---
 
 ## Introduction
@@ -39,7 +39,7 @@ Advancements in robotics are leading us towards a more automated world, where ma
 
 ## The Role of Quantum Computing
 
-{% include image.html src="/assets/images/sample-image-1.jpg" alt="Sample image one" aos="fade-up" %}
+{% include image.html src="/assets/images/sample-image-1.jpg" alt="Sample image one" %}
 
 Quantum computing promises to solve complex problems that are currently beyond the reach of classical computers.
 
