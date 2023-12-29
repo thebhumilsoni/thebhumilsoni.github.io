@@ -87,6 +87,10 @@
                     color: var(--primary-color);
                 }
             }
+
+            .navbar-contact-button {
+                @include base-button-style;
+            }    
         }
 
         .navbar-shortcuts {
@@ -110,7 +114,7 @@
         }
 
         .theme-toggle, .navbar-toggler {
-            @include icon-style;
+            @include base-icon-style;
         }
 
         .theme-toggle i {

@@ -5,14 +5,15 @@
       {% for item in site.data.navigation %}
         <a href="{{ site.baseurl }}{{ item.link }}" class="{% if page.url == item.link %}current{% endif %}">{{ item.name }}</a>
       {% endfor %}
+      <button class="navbar-contact-button">Connect</button>
     </div>
     <div class="navbar-shortcuts">
-      <button class="social-icon github">
-          <i class="fab fa-github"></i>
-      </button>
-      <button class="social-icon linkedin">
-          <i class="fab fa-linkedin-in"></i> 
-      </button>
+      <a href="https://github.com/thebhumilsoni" target="_blank" class="social-icon">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/thebhumilsoni" target="_blank" class="social-icon">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
       <button class="theme-toggle">
           <i class="theme-icon fas fa-sun"></i>
       </button>

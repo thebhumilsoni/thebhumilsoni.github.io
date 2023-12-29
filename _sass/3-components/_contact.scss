@@ -1,0 +1,23 @@
+.contact-section {
+    background-color: var(--contact-section-background);
+    padding: 0.8rem 1.5rem;
+    text-align: center;
+}
+
+.contact-content {
+    color: var(--contact-section-text-color);
+    font-size: 1rem;
+}
+
+.social-links {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+.contact-footer-text {
+    font-size: 0.85rem;
+    color: var(--text-secondary-color);
+}

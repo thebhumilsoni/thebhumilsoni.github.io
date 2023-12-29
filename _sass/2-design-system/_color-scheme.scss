@@ -4,11 +4,13 @@ $primary-light-color: lighten($primary-color, 10%);
 :root {
     --background-color: #ffffff;
     --text-color: #1b1b1b;
+    --text-secondary-color: #666;
     --heading-text-color: #000000;
     --primary-color: #{$primary-color};
     --primary-light-color: #{$primary-light-color};
     --link-color: var(--primary-color);
     --icon-color: var(--text-color);
+    --icon-hover-color: var(--primary-color);
     --syntax-highlighter-background: #151515;
 
     --post-card-background-color: var(--background-color);
@@ -30,16 +32,24 @@ $primary-light-color: lighten($primary-color, 10%);
     --navbar-title-color: var(--heading-text-color);
     --navbar-links-color: var(--text-color);
     --navbar-shadow-color: rgba(0, 0, 0, 0.1);
+    --navbar-contact-button-background: var(--primary-color);
+    --navbar-contact-button-text-color: white;
+
+    // contact section colors
+    --contact-section-background: #f4f5f6;
+    --contact-section-text-color: #333;
 }
   
 :root[dark] {
     --background-color: #131313;
     --text-color: #ded8d8;
+    --text-secondary-color: #929292;
     --heading-text-color: #e9e9e9;
     --primary-color: #{$primary-color};
     --primary-light-color: #{$primary-light-color};
     --link-color: var(--primary-color);
     --icon-color: var(--text-color);
+    --icon-hover-color: var(--primary-color);
     --syntax-highlighter-background: #181717;
 
     // post colors
@@ -62,4 +72,10 @@ $primary-light-color: lighten($primary-color, 10%);
     --navbar-title-color: var(--heading-text-color);
     --navbar-links-color: var(--text-color);
     --navbar-shadow-color: rgba(255, 255, 255, 0.1);
+    --navbar-contact-button-background: var(--primary-color);
+    --navbar-contact-button-text-color: white;
+
+    // contact section colors
+    --contact-section-background: #1b1b1b;
+    --contact-section-text-color: #f4f5f6;
 }

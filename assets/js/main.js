@@ -30,23 +30,32 @@ const applySavedTheme = () => {
   updateThemeIcon(savedTheme === 'dark');
 };
 
+const handleConnectButtonClick = () => {
+  document.querySelector('.contact-section').scrollIntoView({ 
+    behavior: 'smooth' 
+  });
+  if (window.innerWidth < 768) {
+    toggleMobileNav();
+  }
+};
+
+const setCurrentYear = () => {
+  const yearSpan = document.getElementById('current-year');
+  if (yearSpan) {
+      yearSpan.textContent = new Date().getFullYear();
+  }
+};
+
 document.addEventListener('DOMContentLoaded', () => {
   applySavedTheme();
   initializeThemeToggle();
+  setCurrentYear();
 
   const navbarToggler = document.querySelector('.navbar-toggler');
   navbarToggler.addEventListener('click', toggleMobileNav);
 
-  const githubButton = document.querySelector('.social-icon.github');
-  const linkedinButton = document.querySelector('.social-icon.linkedin');
-
-  githubButton.addEventListener('click', () => {
-      window.open('https://github.com/thebhumilsoni', '_blank');
-  });
-
-  linkedinButton.addEventListener('click', () => {
-      window.open('https://www.linkedin.com/in/thebhumilsoni', '_blank');
-  });
+  const connectButton = document.querySelector('.navbar-contact-button');
+  connectButton.addEventListener('click', handleConnectButtonClick);
 });
 
 window.addEventListener('resize', () => {
