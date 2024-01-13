@@ -13,3 +13,9 @@ include:
   - '_pages'
 
 permalink: /posts/:title/
+
+plugins:
+  - jekyll-paginate
+
+paginate: 7
+paginate_path: "/posts/page:num/"
