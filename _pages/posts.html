@@ -6,7 +6,7 @@ permalink: /posts/
 <h1>Archive</h1>
 <div class="posts-grid">
   {% for post in site.posts %}
-    <a href="{{ post.url }}" class="post-card">
+  <a href="{{ post.external_url | default: post.url }}" class="post-card" {% if post.external_url %}target="_blank"{% endif %}>
       <div class="post-card-image" style="background-image: url('{{ post.header }}');" loading="lazy"></div>
       <div class="post-card-details">
         <div class="post-card-meta">
