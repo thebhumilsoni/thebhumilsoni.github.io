@@ -12,4 +12,4 @@ kramdown:
 include:
   - '_pages'
 
-permalink: /posts/:categories/:year/:month/:day/:title.html
+permalink: /posts/:title/
