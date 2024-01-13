@@ -41,7 +41,7 @@ $primary-light-color: lighten($primary-color, 10%);
 }
   
 :root[dark] {
-    --background-color: #131313;
+    --background-color: #111115;
     --text-color: #ded8d8;
     --text-secondary-color: #929292;
     --heading-text-color: #e9e9e9;
@@ -50,15 +50,15 @@ $primary-light-color: lighten($primary-color, 10%);
     --link-color: var(--primary-color);
     --icon-color: var(--text-color);
     --icon-hover-color: var(--primary-color);
-    --syntax-highlighter-background: #181717;
+    --syntax-highlighter-background: #18181c;
 
     // post colors
     --post-card-background-color: var(--background-color);
-    --post-card-shadow-color: rgba(255, 255, 255, 0.2);
+    --post-card-shadow-color: rgba(0, 0, 0, 0.5);
     --post-meta-color: var(--text-color);
 
     // tag colors
-    --tag-background-color: #232224;
+    --tag-background-color: #1b1b21;
     --tag-border-color: transparent;
     --tag-text-color: var(--text-color);
 
@@ -71,11 +71,11 @@ $primary-light-color: lighten($primary-color, 10%);
     --navbar-background-color: var(--background-color);
     --navbar-title-color: var(--heading-text-color);
     --navbar-links-color: var(--text-color);
-    --navbar-shadow-color: rgba(255, 255, 255, 0.1);
+    --navbar-shadow-color: rgba(0, 0, 0, 0.5);
     --navbar-contact-button-background: var(--primary-color);
     --navbar-contact-button-text-color: white;
 
     // contact section colors
-    --contact-section-background: #1b1b1b;
+    --contact-section-background: #18181c;
     --contact-section-text-color: #f4f5f6;
 }
