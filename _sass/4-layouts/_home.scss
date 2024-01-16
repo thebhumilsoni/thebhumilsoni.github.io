@@ -1,0 +1,5 @@
+.home-content-wrapper {
+    @include base-content-wrapper-style;
+    padding: 0;
+    max-width: 100%;
+}
