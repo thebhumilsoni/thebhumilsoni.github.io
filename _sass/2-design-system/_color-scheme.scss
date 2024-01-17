@@ -39,7 +39,7 @@ $primary-light-color: lighten($primary-color, 10%);
     --contact-section-background: #f4f5f6;
     --contact-section-text-color: #333;
 
-    /* Pagination Colors */
+    // pagination Colors
     --pagination-background: #ffffff;
     --pagination-text-color: var(--text-color);
     --pagination-border-color: var(--primary-light-color);
@@ -47,6 +47,10 @@ $primary-light-color: lighten($primary-color, 10%);
     --pagination-hover-text-color: var(--background-color);
     --pagination-current-background: var(--primary-color);
     --pagination-current-text-color: var(--background-color);
+
+    // dynamic background colors
+    --dynamic-background-color-primary: #000000;
+    --dynamic-background-color-secondary: #000000;
 }
   
 :root[dark] {
@@ -88,7 +92,7 @@ $primary-light-color: lighten($primary-color, 10%);
     --contact-section-background: #18181c;
     --contact-section-text-color: #f4f5f6;
 
-    /* Pagination Colors */
+    // pagination colors
     --pagination-background: var(--background-color);
     --pagination-text-color: var(--text-color);
     --pagination-border-color: var(--primary-light-color);
@@ -96,4 +100,8 @@ $primary-light-color: lighten($primary-color, 10%);
     --pagination-hover-text-color: var(--background-color);
     --pagination-current-background: var(--primary-color);
     --pagination-current-text-color: var(--background-color);
+
+    // dynamic background colors
+    --dynamic-background-color-primary: #ffffff;
+    --dynamic-background-color-secondary: #ffffff;
 }
