@@ -17,7 +17,7 @@ const initOrUpdateDynamicBackground = () => {
 const getParticlesConfig = (particleColor, particleLineColor) => {
     return {
         "particles": {
-            "number": { "value": 120 },
+            "number": { "value": 90 },
             "color": { "value": particleColor },
             "shape": { "type": "circle" },
             "opacity": { "value": 0.7 },

@@ -12,6 +12,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    padding: 2.5rem 0;
+
+    @include for-medium-up {
+        padding: 3.5rem 0;
+    }
 }
 
 .dynamic-background {
@@ -23,10 +29,25 @@
     z-index: 1;
 }
 
+.dynamic-background-solid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
 .hero-content {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     z-index: 2;
     pointer-events: none;
+    gap: 0.8rem;
+    max-width: $max-width;
+    padding: 0 1.5rem;
 
     h1, h2, h3, h4, h5, h6, p {
         width: fit-content;
@@ -34,8 +55,83 @@
         pointer-events: auto;
     }
 
-    button {
+    a, button, img {
         cursor: pointer;
         pointer-events: auto;
+    }
+
+    .hero-image {
+        width: 10rem;
+        height: 10rem;
+        border-radius: 50%;
+        background-color: var(--hero-image-background-color);
+        overflow: hidden;
+        margin-bottom: 1rem;
+        transition: transform 0.3s ease-in-out;
+        
+        &:hover {
+            transform: scale(1.05);
+        }
+
+        img {
+            margin-top: 8px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .hero-introduction {
+        margin: 0 auto;
+    }
+
+    .hero-about-me {
+        font-size: 1.3rem;
+        color: var(--text-secondary-color);
+        margin: 0 auto;
+
+        @include for-medium-up {
+            font-size: 1.5rem;
+        }
+    }
+
+    .hero-read-more {
+        font-size: 1.1rem;
+        color: var(--text-secondary-color);
+        margin: 0 auto;
+
+        @include for-medium-up {
+            font-size: 1.2rem;
+        }
+    }
+
+    .about-link {
+        color: var(--primary-color);
+        text-decoration: none;
+        font-weight: bold;
+
+        &:hover {
+            text-decoration: underline;
+            color: var(--primary-color);
+        }
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin: 0 auto;
+
+        .social-icon {
+            display: inline-block;
+            font-size: 1.5rem;
+            color: var(--icon-color);
+            transition: transform 0.3s ease, color 0.3s ease;
+
+            &:hover {
+                transform: scale(1.2);
+                color: var(--primary-color);
+            }
+        }
     }
 }

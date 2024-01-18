@@ -12,7 +12,7 @@ body {
 .default-content-wrapper {
     @include base-content-wrapper-style;
     padding: 1rem 1.5rem;
-    max-width: 1170px;
+    max-width: $max-width;
     flex: 1;
 }
 
