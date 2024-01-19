@@ -1,0 +1,11 @@
+.social-links {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+.social-icon {
+    @include base-icon-style;
+}
