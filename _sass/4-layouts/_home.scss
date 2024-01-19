@@ -46,8 +46,8 @@
     z-index: 2;
     pointer-events: none;
     gap: 0.8rem;
-    max-width: $max-width;
-    padding: 0 1.5rem;
+    max-width: $content-max-width;
+    padding: 0 $content-horizontal-padding;
 
     h1, h2, h3, h4, h5, h6, p {
         width: fit-content;
@@ -115,4 +115,10 @@
             color: var(--primary-color);
         }
     }
+}
+
+.home-content {
+    @include base-content-wrapper-style;
+    max-width: $content-max-width;
+    padding: 0rem $content-horizontal-padding;
 }

@@ -16,12 +16,12 @@
         display: flex;
         align-items: center;
         width: 100%;
-        padding: 1.1rem 1.5rem;
+        padding: 1.1rem $content-horizontal-padding;
         gap: 1.5rem;
 
         @include for-medium-up {
             justify-content: space-between;
-            padding: 1.3rem 1.5rem;
+            padding: 1.3rem $content-horizontal-padding;
         }
 
         .navbar-title {
