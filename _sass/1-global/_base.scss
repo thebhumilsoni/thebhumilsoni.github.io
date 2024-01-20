@@ -9,13 +9,6 @@ body {
     margin: 0;
 }
 
-.default-content-wrapper {
-    @include base-content-wrapper-style;
-    padding: 1rem $content-horizontal-padding;
-    max-width: $content-max-width;
-    flex: 1;
-}
-
 h1, h2, h3, h4, h5, h6 {
     color: var(--heading-text-color);
     margin-top: 0.5em;
@@ -70,4 +63,38 @@ blockquote {
     display: block;
     position: relative;
     overflow: hidden;
+}
+
+.base-page-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+}
+
+.default-content-wrapper {
+    @include base-content-wrapper-style;
+    padding: 1rem $content-horizontal-padding;
+    max-width: $content-max-width;
+    flex: 1;
+}
+
+.default-page-header {
+    box-sizing: border-box;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .default-header-content {
+        width: 100%;
+        margin: 0 auto;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        padding: 0rem $content-horizontal-padding;
+        max-width: $content-max-width;
+        padding-top: 0.2rem;
+        padding-bottom: 0.2rem;
+    }
 }

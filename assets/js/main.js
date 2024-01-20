@@ -73,3 +73,25 @@ window.addEventListener('resize', () => {
       navbarTogglerIcon.className = navbarLinks.classList.contains('open') ? 'fas fa-times' : 'fas fa-bars';
   }
 });
+
+window.onscroll = function() { toggleStickyNavbar(); };
+    
+function toggleStickyNavbar() {
+  var navbar = document.querySelector('.navbar');
+  var body = document.body;
+  var header = document.querySelector('.default-page-header');
+  var headerBottom = header.offsetTop + header.offsetHeight;
+  var navbarHeight = navbar.offsetHeight + 'px';
+
+  if (window.scrollY >= headerBottom) {
+      navbar.classList.add('sticky');
+      navbar.style.top = '0';
+      body.style.paddingTop = navbarHeight;
+  } else {
+      navbar.style.top = '-' + navbarHeight;
+      if (window.scrollY < headerBottom) {
+          navbar.classList.remove('sticky');
+          body.style.paddingTop = '0';
+      }
+  }
+}

@@ -28,7 +28,7 @@ $primary-light-color: lighten($primary-color, 10%);
     --td-border-color: var(--primary-light-color);
 
     // navigation bar colors
-    --navbar-background-color: var(--background-color);
+    --navbar-background-color: transparent;
     --navbar-title-color: var(--heading-text-color);
     --navbar-links-color: var(--text-color);
     --navbar-shadow-color: rgba(0, 0, 0, 0.1);
@@ -84,7 +84,7 @@ $primary-light-color: lighten($primary-color, 10%);
     --td-border-color: var(--primary-light-color);
 
     // navigation bar colors
-    --navbar-background-color: var(--background-color);
+    --navbar-background-color: transparent;
     --navbar-title-color: var(--heading-text-color);
     --navbar-links-color: var(--text-color);
     --navbar-shadow-color: rgba(0, 0, 0, 0.5);

@@ -2,7 +2,6 @@
 @import "1-global/mixins";
 
 .navbar {
-    position: sticky;
     top: 0;
     left: 0;
     z-index: 10;
@@ -10,7 +9,15 @@
     display: flex;
     justify-content: center;
     background-color: var(--navbar-background-color);
-    box-shadow: 0 2px 4px var(--navbar-shadow-color);
+    transition: top 0.3s ease-in-out;
+
+    &.sticky {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        background-color: var(--background-color);
+        box-shadow: 0 2px 4px var(--navbar-shadow-color); 
+    }
 
     .navbar-inner {
         display: flex;
@@ -77,6 +84,7 @@
                 justify-content: center;
                 align-items: center;
                 z-index: 1;
+                background-color: transparent;
             }
 
             a {

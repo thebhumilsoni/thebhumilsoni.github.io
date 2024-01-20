@@ -1,22 +1,25 @@
 ---
-layout: home
+layout: base
 title: Home
 ---
-<div class="hero-container">
-    <div id="dynamic-background-solid" class="dynamic-background-solid"></div>
-    <div class="hero-content" data-aos="fade-up">
-        <div class="hero-image">
-            <img src="/assets/images/hero-image.png" alt="Bhumil Soni">
+<div class="default-page-header">
+    {% include navigation.html %}
+    <div class="hero-container">
+        <div id="dynamic-background-solid" class="dynamic-background-solid"></div>
+        <div class="hero-content">
+            <div class="hero-image">
+                <img src="/assets/images/hero-image.png" alt="Bhumil Soni">
+            </div>
+            <h2 class="hero-introduction">Hello, I'm Bhumil 👋</h2>
+            <p class="hero-about-me">I'm a mobile app developer.  I can develop for web too, and more.</p>
+            <p class="hero-read-more">
+                You can read more about me <a href="/about" class="about-link">here</a>.
+            </p>
+            {% include social-links.html %}
         </div>
-        <h2 class="hero-introduction">Hello, I'm Bhumil 👋</h2>
-        <p class="hero-about-me">I'm a mobile app developer.  I can develop for web too, and more.</p>
-        <p class="hero-read-more">
-            You can read more about me <a href="/about" class="about-link">here</a>.
-        </p>
-        {% include social-links.html %}
     </div>
 </div>
-<div class="home-content">
+<div class="default-content-wrapper">
     <h2>Projects</h2>
     <p>There are a number of reasons you may need a block of text and when you do, a random paragraph can be the perfect solution. If you happen to be a web designer and you need some random text to show in your layout, a random paragraph can be an excellent way to do this. If you're a programmer and you need random text to test the program, using these paragraphs can be the perfect way to do this. Anyone who's in search of realistic text for a project can use one or more of these random paragraphs to fill their need.</p>
     <h2>Latest Post</h2>
