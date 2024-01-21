@@ -1,0 +1,18 @@
+{% assign card_class = include.class | default: 'post-card' %}
+<a href="{{ post.external_url | default: post.url }}" class="{{ card_class }}" {% if post.external_url %}target="_blank"{% endif %}>
+    <div class="post-card-image" style="background-image: url('{{ post.header }}');" loading="lazy"></div>
+    <div class="post-card-details">
+        <div class="post-card-meta">
+            <time class="post-card-date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d %B %Y" }}</time>
+        </div>
+        <h5 class="post-card-title">{{ post.title }}</h5>
+        {% if post.tags %}
+            <div class="post-card-tags">
+                {% for tag in post.tags %}
+                    <span class="post-card-tag">{{ tag }}</span>
+                {% endfor %}
+            </div>
+        {% endif %}
+        <p class="post-card-summary">{{ post.summary }}</p>
+    </div>
+</a>

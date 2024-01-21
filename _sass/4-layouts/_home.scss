@@ -122,3 +122,70 @@
     max-width: $content-max-width;
     padding: 0rem $content-horizontal-padding;
 }
+
+// Pinned post styles
+
+.pinned-post-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    @include for-medium-up {
+        gap: 2rem;
+    }
+}
+
+.pinned-post-title {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    position: relative;
+    width: 100%;
+}
+
+.pinned-icon {
+    font-size: 1.35rem;
+}
+
+.pinned-post-card {
+    // Styles for small screens remain the same
+
+    @include for-small-up {
+        .post-card-title {
+            font-size: 1.2rem;
+        }
+
+        .post-card-summary {
+            font-size: 1.05rem;
+        }
+    }
+
+    @include for-medium-up {
+        grid-template-columns: 50% 50%;
+
+        .post-card-image {
+            min-height: 20rem;
+        }
+
+        .post-card-details {
+            padding: 2rem;
+            display: flex;
+            justify-content: center;
+            gap: 1.2rem;
+
+            .post-card-title {
+                font-size: 1.3rem;
+            }
+
+            .post-card-summary {
+                font-size: 1.1rem;
+            }
+        }
+
+        .post-card-date {
+            font-size: 1.03rem;
+        }
+    }
+}
+
+

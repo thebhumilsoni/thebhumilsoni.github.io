@@ -12,10 +12,11 @@ $primary-light-color: lighten($primary-color, 10%);
     --icon-color: var(--text-color);
     --icon-hover-color: var(--primary-color);
     --syntax-highlighter-background: #151515;
+    --divider-color: #adadad;
 
     --post-card-background-color: var(--background-color);
     --post-card-shadow-color: rgba(0, 0, 0, 0.2);
-    --post-meta-color: var(--text-color);
+    --post-meta-color: var(--text-secondary-color);
 
     // tag colors
     --tag-background-color: var(--primary-color);
@@ -67,11 +68,12 @@ $primary-light-color: lighten($primary-color, 10%);
     --icon-color: var(--text-color);
     --icon-hover-color: var(--primary-color);
     --syntax-highlighter-background: #18181c;
+    --divider-color: #636363;
 
     // post colors
     --post-card-background-color: var(--background-color);
     --post-card-shadow-color: rgba(0, 0, 0, 0.5);
-    --post-meta-color: var(--text-color);
+    --post-meta-color: var(--text-secondary-color);
 
     // tag colors
     --tag-background-color: #1b1b21;

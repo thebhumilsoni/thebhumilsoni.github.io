@@ -99,3 +99,9 @@ blockquote {
         padding-bottom: 0.2rem;
     }
 }
+
+.divider {
+    height: 0.8px;
+    background-color: var(--divider-color);
+    flex-grow: 1;
+}
