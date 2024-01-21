@@ -81,8 +81,9 @@ blockquote {
 }
 
 .default-page-header {
+    position: relative;
     box-sizing: border-box;
-    overflow-x: hidden;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     width: 100%;
