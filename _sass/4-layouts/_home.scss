@@ -135,7 +135,7 @@
     }
 }
 
-.pinned-post-title {
+.section-title {
     display: flex;
     align-items: center;
     gap: 1.5rem;
@@ -188,4 +188,47 @@
     }
 }
 
+// Latest post styles
 
+.latest-posts-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    @include for-medium-up {
+        gap: 2rem;
+    }
+}
+
+.latest-posts-grid {
+    display: grid;
+    grid-gap: 2rem;
+    justify-content: center;
+
+    @include for-small-up {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    @include for-medium-up {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    @include for-large-up {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+
+.latest-post-card {
+    @extend .post-card;
+
+    @include for-medium-up {
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px 1fr;
+    }
+}
+
+.show-all-posts-button {
+    @include base-button-style;
+    margin: 0 auto;
+    padding: 0.8rem 1.3rem;
+}

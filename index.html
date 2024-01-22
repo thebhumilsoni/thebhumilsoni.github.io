@@ -24,7 +24,7 @@ title: Home
     {% for post in site.posts %}
         {% if post.pinned %}
         <div class="pinned-post-section">
-            <div class="pinned-post-title">
+            <div class="section-title">
                 <div class="divider"></div>
                 <i class="fas fa-thumbtack pinned-icon"></i> 
                 <div class="divider"></div>
@@ -35,4 +35,21 @@ title: Home
         {% break %}
         {% endif %}
     {% endfor %}
+    <br>
+    <br>
+    <div class="latest-posts-section">
+        <div class="section-title">
+            <div class="divider"></div>
+            <h4>Latest Posts</h4>
+            <div class="divider"></div>
+        </div>
+        <div class="latest-posts-grid">
+            {% for post in site.posts limit:9 %}
+                {% include post-card.html post=post class='latest-post-card' %}
+            {% endfor %}
+        </div>
+        {% if site.posts.size > 9 %}
+            <a href="/posts" class="show-all-posts-button">Show All</a>
+        {% endif %}
+    </div>
 </div>
