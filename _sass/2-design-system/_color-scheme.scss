@@ -46,10 +46,10 @@ $primary-light-color: lighten($primary-color, 10%);
     --pagination-background: #ffffff;
     --pagination-text-color: var(--text-color);
     --pagination-border-color: var(--primary-light-color);
-    --pagination-hover-background: var(--primary-light-color);
-    --pagination-hover-text-color: var(--background-color);
+    --pagination-hover-background: #f4f5f6;
+    --pagination-hover-text-color: var(--text-color);
     --pagination-current-background: var(--primary-color);
-    --pagination-current-text-color: var(--background-color);
+    --pagination-current-text-color: white;
 
     // dynamic background colors
     --dynamic-background-color-primary: #000000;
@@ -105,10 +105,10 @@ $primary-light-color: lighten($primary-color, 10%);
     --pagination-background: var(--background-color);
     --pagination-text-color: var(--text-color);
     --pagination-border-color: var(--primary-light-color);
-    --pagination-hover-background: var(--primary-light-color);
-    --pagination-hover-text-color: var(--background-color);
+    --pagination-hover-background: #18181c;
+    --pagination-hover-text-color: var(--text-color);
     --pagination-current-background: var(--primary-color);
-    --pagination-current-text-color: var(--background-color);
+    --pagination-current-text-color: white;
 
     // dynamic background colors
     --dynamic-background-color-primary: #ffffff;

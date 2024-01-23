@@ -4,14 +4,14 @@ title: "My Last Post."
 summary: "This posts talks about creating static website using Jekyll."
 date: 2023-12-01 12:00:00 -0000
 tags: [Android, iOS, Kotlin]
-header: /assets/images/post/post-header-one.jpg
+header: /assets/images/post/post-header-three.jpg
 ---
 
 The future of **technology** is a vast and exciting field, constantly evolving and pushing the boundaries of what we believe to be possible. From the development of artificial intelligence to the exploration of space, the *pace of technological advancement* is accelerating at an <u>unprecedented rate</u>. The future of **technology** is a vast and exciting field, constantly evolving and pushing the boundaries of what we believe to be possible. From the development of artificial intelligence to the exploration of space, the *pace of technological advancement* is accelerating at an <u>unprecedented rate</u>.
 
 ### What Lies Ahead
 
-{% include image.html src="/assets/images/sample-image-3.jpg" alt="Sample image three" %}
+{% include image.html src="/assets/images/post/post-header-two.png" alt="Sample image three" %}
 
 As we gaze into the future, several key areas emerge as hotbeds of innovation and development:
 
@@ -35,7 +35,7 @@ Advancements in robotics are leading us towards a more automated world, where ma
 
 ## The Role of Quantum Computing
 
-{% include image.html src="/assets/images/sample-image-1.jpg" alt="Sample image one" %}
+{% include image.html src="/assets/images/post/post-header-one.jpg" alt="Sample image one" %}
 
 Quantum computing promises to solve complex problems that are currently beyond the reach of classical computers.
 
