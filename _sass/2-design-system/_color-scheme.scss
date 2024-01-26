@@ -17,7 +17,9 @@ $primary-light-color: lighten($primary-color, 10%);
     --button-hover-background-color: #f4f5f6;
     --button-text-color: white;
     --button-hover-text-color: var(--text-color);
+    --section-header-color: #1b202e;
 
+    // post card colors
     --post-card-background-color: var(--background-color);
     --post-card-shadow-color: rgba(0, 0, 0, 0.2);
     --post-meta-color: var(--text-secondary-color);
@@ -75,8 +77,9 @@ $primary-light-color: lighten($primary-color, 10%);
     --button-hover-background-color: #18181c;
     --button-text-color: white;
     --button-hover-text-color: var(--text-color);
+    --section-header-color: #d2d2d2;
 
-    // post colors
+    // post card colors
     --post-card-background-color: var(--background-color);
     --post-card-shadow-color: rgba(0, 0, 0, 0.5);
     --post-meta-color: var(--text-secondary-color);

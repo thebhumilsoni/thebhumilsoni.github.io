@@ -24,11 +24,7 @@ title: Home
     {% for post in site.posts %}
         {% if post.pinned %}
         <div class="pinned-post-section">
-            <div class="section-title">
-                <div class="divider"></div>
-                <i class="fas fa-thumbtack pinned-icon"></i> 
-                <div class="divider"></div>
-            </div>
+            {% include section-header.html content='<i class="fas fa-thumbtack pinned-icon"></i>' %}
             {% include post-card.html post=post class='post-card pinned-post-card' %} 
         </div>
         {% assign pinned_post_found = true %}
@@ -38,11 +34,7 @@ title: Home
     <br>
     <br>
     <div class="latest-posts-section">
-        <div class="section-title">
-            <div class="divider"></div>
-            <h4>Latest Posts</h4>
-            <div class="divider"></div>
-        </div>
+        {% include section-header.html content="Latest Posts" %}
         <div class="latest-posts-grid">
             {% for post in site.posts limit:9 %}
                 {% include post-card.html post=post class='latest-post-card' %}
