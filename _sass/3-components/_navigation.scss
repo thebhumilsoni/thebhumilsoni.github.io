@@ -32,21 +32,21 @@
         }
 
         .navbar-title {
+            display: flex;
             flex: 1;
-            font-weight: bold;
-            font-size: 1.4em;
-            color: var(--navbar-title-color);
+        }
 
-            &:hover {
-                text-decoration: none;
-            }
+        .navbar-image {
+            @include circular-image;
+            width: 3rem;
+            height: 3rem;
+            background-color: var(--hero-image-background-color);
 
-            @include for-medium-up {
-                font-size: 1.55em;
-            }
-
-            @include for-large-up {
-                font-size: 1.7em;
+            img {
+                @include base-image-style;
+                height: 80%;
+                width: auto;
+                margin-top: 4px;
             }
         }
 
