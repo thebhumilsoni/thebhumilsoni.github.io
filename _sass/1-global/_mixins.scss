@@ -78,3 +78,22 @@
         text-decoration: none;
     }
 }
+
+@mixin circular-image {
+    height: 10rem;
+    width: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    img {
+        @include base-image-style;
+    }
+}

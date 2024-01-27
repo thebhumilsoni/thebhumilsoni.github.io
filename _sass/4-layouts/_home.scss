@@ -15,8 +15,16 @@
     text-align: center;
     padding: 2.5rem 0;
 
+    @include for-small-up {
+        padding: 3rem 0;
+    }
+
     @include for-medium-up {
-        padding: 3.5rem 0;
+        padding: 4rem 0;
+    }
+
+    @include for-large-up {
+        padding: 5rem 0;
     }
 }
 
@@ -45,7 +53,7 @@
     align-items: center;
     z-index: 2;
     pointer-events: none;
-    gap: 0.8rem;
+    gap: 0.9rem;
     max-width: $content-max-width;
     padding: 0 $content-horizontal-padding;
 
@@ -61,23 +69,13 @@
     }
 
     .hero-image {
-        width: 10rem;
-        height: 10rem;
-        border-radius: 50%;
+        @include circular-image;
         background-color: var(--hero-image-background-color);
-        overflow: hidden;
-        margin-bottom: 1rem;
-        transition: transform 0.3s ease-in-out;
-        
-        &:hover {
-            transform: scale(1.05);
-        }
+        margin-bottom: 1.2rem;
 
         img {
-            margin-top: 8px;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+            margin-top: 1.1rem;
+            margin-right: 0.2rem;
         }
     }
 
@@ -92,27 +90,6 @@
 
         @include for-medium-up {
             font-size: 1.5rem;
-        }
-    }
-
-    .hero-read-more {
-        font-size: 1.1rem;
-        color: var(--text-secondary-color);
-        margin: 0 auto;
-
-        @include for-medium-up {
-            font-size: 1.2rem;
-        }
-    }
-
-    .about-link {
-        color: var(--primary-color);
-        text-decoration: none;
-        font-weight: bold;
-
-        &:hover {
-            text-decoration: underline;
-            color: var(--primary-color);
         }
     }
 }
