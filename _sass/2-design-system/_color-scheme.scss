@@ -2,7 +2,7 @@ $primary-color: #426FEB;
 $primary-light-color: lighten($primary-color, 10%);
 
 :root {
-    --background-color: #ffffff;
+    --background-color: #fff;
     --text-color: #1b1b1b;
     --text-secondary-color: #666;
     --heading-text-color: #000000;
@@ -36,9 +36,14 @@ $primary-light-color: lighten($primary-color, 10%);
 
     // navigation bar colors
     --navbar-background-color: transparent;
-    --navbar-title-color: var(--heading-text-color);
-    --navbar-links-color: var(--text-color);
+    --navbar-link-item-color: #454850;
+    --navbar-link-item-current-color: #292929;
+    --navbar-link-item-hover-color: #eaeced;
+    --navbar-links-background-color: transparent;
     --navbar-shadow-color: rgba(0, 0, 0, 0.1);
+    --navbar-item-background-color: rgba(255, 255, 255, 0.6);
+    --navbar-item-box-shadow-color: 0 8px 32px rgba(0, 0, 0, 0.1);
+    --navbar-icon-color: #3e4144;
 
     // contact section colors
     --contact-section-background: #f4f5f6;
@@ -58,7 +63,7 @@ $primary-light-color: lighten($primary-color, 10%);
     --dynamic-background-color-secondary: #000000;
 
     // hero section colors
-    --hero-image-background-color: #d2d2d4;
+    --hero-image-background-color: #eaeced;
 }
   
 :root[dark] {
@@ -71,10 +76,10 @@ $primary-light-color: lighten($primary-color, 10%);
     --link-color: var(--primary-color);
     --icon-color: var(--text-color);
     --icon-hover-color: var(--primary-color);
-    --syntax-highlighter-background: #18181c;
+    --syntax-highlighter-background: #212126;
     --divider-color: #636363;
     --button-background-color: var(--primary-color);
-    --button-hover-background-color: #18181c;
+    --button-hover-background-color: #141418;
     --button-text-color: white;
     --button-hover-text-color: var(--text-color);
     --section-header-color: #d2d2d2;
@@ -96,19 +101,24 @@ $primary-light-color: lighten($primary-color, 10%);
 
     // navigation bar colors
     --navbar-background-color: transparent;
-    --navbar-title-color: var(--heading-text-color);
-    --navbar-links-color: var(--text-color);
+    --navbar-link-item-color: #b5b4b4;
+    --navbar-link-item-current-color: #cccccc;
+    --navbar-link-item-hover-color: #111115;
+    --navbar-links-background-color: transparent;
     --navbar-shadow-color: rgba(0, 0, 0, 0.5);
+    --navbar-item-background-color: #212126b3;
+    --navbar-item-box-shadow-color: 0 1px 3px rgba(2, 2, 2, 0.4);
+    --navbar-icon-color: #bec0c4;
 
     // contact section colors
-    --contact-section-background: #18181c;
+    --contact-section-background: #212126;
     --contact-section-text-color: #f4f5f6;
 
     // pagination colors
     --pagination-background: var(--background-color);
     --pagination-text-color: var(--text-color);
     --pagination-border-color: var(--primary-light-color);
-    --pagination-hover-background: #18181c;
+    --pagination-hover-background: #212126;
     --pagination-hover-text-color: var(--text-color);
     --pagination-current-background: var(--primary-color);
     --pagination-current-text-color: white;
@@ -118,5 +128,5 @@ $primary-light-color: lighten($primary-color, 10%);
     --dynamic-background-color-secondary: #ffffff;
 
     // hero section colors
-    --hero-image-background-color: #1a1a1e;
+    --hero-image-background-color: #212126;
 }
