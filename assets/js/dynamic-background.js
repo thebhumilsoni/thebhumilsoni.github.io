@@ -1,5 +1,7 @@
 const getThemeColors = () => {
     return {
+        backgroundColor: getComputedStyle(document.documentElement)
+                            .getPropertyValue('--dynamic-background-color').trim(),
         primaryColor: getComputedStyle(document.documentElement)
                       .getPropertyValue('--dynamic-background-color-primary').trim(),
         secondaryColor: getComputedStyle(document.documentElement)
@@ -17,11 +19,11 @@ const initOrUpdateDynamicBackground = () => {
 const getParticlesConfig = (particleColor, particleLineColor) => {
     return {
         "particles": {
-            "number": { "value": 90 },
+            "number": { "value": 50 },
             "color": { "value": particleColor },
             "shape": { "type": "circle" },
             "opacity": { "value": 0.7 },
-            "size": { "value": 2.5 },
+            "size": { "value": 2 },
             "line_linked": {
                 "enable": true,
                 "color": particleLineColor

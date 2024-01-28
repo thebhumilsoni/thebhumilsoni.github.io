@@ -61,8 +61,9 @@ $primary-light-color: lighten($primary-color, 10%);
     --pagination-current-text-color: white;
 
     // dynamic background colors
+    --dynamic-background-color: var(--background-color);
     --dynamic-background-color-primary: #000000;
-    --dynamic-background-color-secondary: #000000;
+    --dynamic-background-color-secondary: #646774;
 
     // hero section colors
     --hero-image-background-color: #eaeced;
@@ -128,8 +129,9 @@ $primary-light-color: lighten($primary-color, 10%);
     --pagination-current-text-color: white;
 
     // dynamic background colors
+    --dynamic-background-color: var(--background-color);
     --dynamic-background-color-primary: #ffffff;
-    --dynamic-background-color-secondary: #ffffff;
+    --dynamic-background-color-secondary: #646774;
 
     // hero section colors
     --hero-image-background-color: #1a1b1f;
