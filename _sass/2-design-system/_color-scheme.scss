@@ -2,8 +2,8 @@ $primary-color: #426FEB;
 $primary-light-color: lighten($primary-color, 10%);
 
 :root {
-    --background-color: #fff;
-    --text-color: #1b1b1b;
+    --background-color: #fefefe;
+    --text-color: #2f3031;
     --text-secondary-color: #666;
     --heading-text-color: #000000;
     --primary-color: #{$primary-color};
@@ -11,21 +11,23 @@ $primary-light-color: lighten($primary-color, 10%);
     --link-color: var(--primary-color);
     --icon-color: var(--text-color);
     --icon-hover-color: var(--primary-color);
-    --syntax-highlighter-background: #151515;
+    --syntax-highlighter-background: #262731;
     --divider-color: #adadad;
     --button-background-color: var(--primary-color);
-    --button-hover-background-color: #f4f5f6;
+    --button-hover-background-color: #eaeced;
     --button-text-color: white;
     --button-hover-text-color: var(--text-color);
     --section-header-color: #1b202e;
 
     // post card colors
-    --post-card-background-color: var(--background-color);
-    --post-card-shadow-color: rgba(0, 0, 0, 0.2);
+    --post-card-background-color: rgba(244, 245, 246, 0.8);
+    --post-card-hover-background-color: transparent;
+    --post-card-box-shadow-color: 0 4px 8px rgba(0, 0, 0, 0.2);
     --post-meta-color: var(--text-secondary-color);
 
     // tag colors
     --tag-background-color: var(--primary-color);
+    --tag-post-background-color: var(--primary-color);
     --tag-border-color: transparent;
     --tag-text-color: #ffffff;
 
@@ -68,7 +70,7 @@ $primary-light-color: lighten($primary-color, 10%);
   
 :root[dark] {
     --background-color: #111115;
-    --text-color: #ded8d8;
+    --text-color: #b5b7bb;
     --text-secondary-color: #929292;
     --heading-text-color: #e9e9e9;
     --primary-color: #{$primary-color};
@@ -76,7 +78,7 @@ $primary-light-color: lighten($primary-color, 10%);
     --link-color: var(--primary-color);
     --icon-color: var(--text-color);
     --icon-hover-color: var(--primary-color);
-    --syntax-highlighter-background: #212126;
+    --syntax-highlighter-background: #18181c;
     --divider-color: #636363;
     --button-background-color: var(--primary-color);
     --button-hover-background-color: #141418;
@@ -85,12 +87,14 @@ $primary-light-color: lighten($primary-color, 10%);
     --section-header-color: #d2d2d2;
 
     // post card colors
-    --post-card-background-color: var(--background-color);
-    --post-card-shadow-color: rgba(0, 0, 0, 0.5);
+    --post-card-background-color: #18181c;
+    --post-card-hover-background-color: #141418;
+    --post-card-box-shadow-color: 0 4px 8px rgba(0, 0, 0, 0.5);
     --post-meta-color: var(--text-secondary-color);
 
     // tag colors
     --tag-background-color: #1b1b21;
+    --tag-post-background-color: #111114;
     --tag-border-color: transparent;
     --tag-text-color: var(--text-color);
 
@@ -111,7 +115,7 @@ $primary-light-color: lighten($primary-color, 10%);
     --navbar-icon-color: #bec0c4;
 
     // contact section colors
-    --contact-section-background: #212126;
+    --contact-section-background: #18181c;
     --contact-section-text-color: #f4f5f6;
 
     // pagination colors
@@ -128,5 +132,5 @@ $primary-light-color: lighten($primary-color, 10%);
     --dynamic-background-color-secondary: #ffffff;
 
     // hero section colors
-    --hero-image-background-color: #212126;
+    --hero-image-background-color: #1a1b1f;
 }

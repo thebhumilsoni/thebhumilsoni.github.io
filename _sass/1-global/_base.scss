@@ -70,6 +70,8 @@ blockquote {
     padding: 1rem $content-horizontal-padding;
     max-width: $content-max-width;
     flex: 1;
+    margin-bottom: 8rem;
+    overflow: hidden;
 }
 
 .default-page-header {
