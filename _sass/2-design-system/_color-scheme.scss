@@ -22,7 +22,7 @@ $primary-light-color: lighten($primary-color, 10%);
     // post card colors
     --post-card-background-color: rgba(244, 245, 246, 0.8);
     --post-card-hover-background-color: transparent;
-    --post-card-box-shadow-color: 0 4px 8px rgba(0, 0, 0, 0.2);
+    --post-card-box-shadow-color: 0 2px 20px rgba(0, 0, 0, 0.1);
     --post-meta-color: var(--text-secondary-color);
 
     // tag colors
@@ -90,12 +90,12 @@ $primary-light-color: lighten($primary-color, 10%);
     // post card colors
     --post-card-background-color: #18181c;
     --post-card-hover-background-color: #141418;
-    --post-card-box-shadow-color: 0 4px 8px rgba(0, 0, 0, 0.5);
+    --post-card-box-shadow-color: 0 2px 20px rgba(0, 0, 0, 0.1);
     --post-meta-color: var(--text-secondary-color);
 
     // tag colors
     --tag-background-color: #1b1b21;
-    --tag-post-background-color: #111114;
+    --tag-post-background-color: #232328;
     --tag-border-color: transparent;
     --tag-text-color: var(--text-color);
 
