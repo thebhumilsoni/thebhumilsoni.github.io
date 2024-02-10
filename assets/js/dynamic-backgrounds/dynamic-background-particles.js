@@ -1,3 +1,10 @@
+/*
+Add below scripts to base.html before the end of body tag
+
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="{{ '/assets/js/dynamic-backgrounds/dynamic-background-particles.js' | relative_url }}"></script>
+*/
+
 const getThemeColors = () => {
     return {
         backgroundColor: getComputedStyle(document.documentElement)
