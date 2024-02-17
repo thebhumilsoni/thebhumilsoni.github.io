@@ -1,6 +1,10 @@
 .posts-grid {
     display: grid;
     grid-gap: 2rem;
+
+    @include for-small-up {
+        grid-gap: 2.5rem;
+    }
 }
 
 .post-card {
@@ -10,6 +14,7 @@
     border-radius: $border-radius;
     overflow: hidden;
     background-color: var(--post-card-background-color);
+    box-shadow: var(--post-card-box-shadow-color);
     text-decoration: none;
     color: inherit;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -23,7 +28,7 @@
         text-decoration: none;
         transform: scale(1.02) translateY(-10px);
         background-color: var(--post-card-hover-background-color);
-        box-shadow: var(--post-card-box-shadow-color);
+        box-shadow: var(--post-card-hover-box-shadow-color);
 
         .post-card-tag {
             background-color: var(--tag-background-color);
@@ -44,6 +49,10 @@
     flex-direction: column;
     overflow: hidden;
     gap: 0.6rem;
+
+    @include for-large-up {
+        padding: 1.9rem;
+    }
 }
 
 .post-card-meta {
@@ -69,8 +78,9 @@
     
     .post-card-tag {
         display: inline-block;
-        padding: 0.3rem 0.6rem;
+        padding: 0.22rem 0.66rem;
         font-size: 0.8rem;
+        font-weight: 300;
         background-color: var(--tag-post-background-color);
         border: 1px solid var(--tag-border-color);
         color: var(--tag-text-color);
@@ -91,6 +101,7 @@
 
 .post-card-summary {
     margin: 0;
+    margin-top: 0.2rem;
     font-size: 0.9rem;
     overflow: hidden;
     text-overflow: ellipsis;

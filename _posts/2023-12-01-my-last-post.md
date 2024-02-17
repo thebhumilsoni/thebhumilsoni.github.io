@@ -90,7 +90,6 @@ fun calculateFutureTechImpact(techFactor: Double): Double {
 }
 ```
 
----
-
 ## Conclusion
+---
 The future of technology is an ever-evolving landscape, brimming with possibilities and potential. As we continue to innovate and explore, the only limit is our imagination.
