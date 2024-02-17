@@ -1,7 +1,14 @@
 @import "1-global/mixins";
 
-$font-primary: 'Nunito Sans', sans-serif;
-$font-code: 'Fira Code', monospace;
+@font-face {
+    font-family: 'Geist Mono';
+    src: url('/assets/fonts/GeistMono-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+$font-primary: 'Nunito', sans-serif;
+$font-code: 'Geist Mono', monospace;
 $font-primary-light: 300;
 $font-primary-regular: 400;
 $font-primary-regular-italic: 400;
