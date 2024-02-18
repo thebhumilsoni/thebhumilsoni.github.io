@@ -20,11 +20,11 @@
     }
 
     @include for-medium-up {
-        padding: 4rem 0;
+        padding: 3.5rem 0;
     }
 
     @include for-large-up {
-        padding: 5rem 0;
+        padding: 4rem 0;
     }
 }
 
@@ -109,7 +109,7 @@
     gap: 1.5rem;
 
     @include for-medium-up {
-        gap: 2rem;
+        gap: 2.5rem;
     }
 }
 
@@ -166,7 +166,7 @@
     gap: 1.5rem;
 
     @include for-medium-up {
-        gap: 2rem;
+        gap: 2.5rem;
     }
 }
 
