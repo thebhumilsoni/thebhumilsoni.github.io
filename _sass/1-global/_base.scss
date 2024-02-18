@@ -29,7 +29,8 @@ a {
     text-decoration: none;
     
     &:hover {
-        text-decoration: underline;
+        font-weight: 600;
+        text-decoration: none;
     }
 }
 
