@@ -29,14 +29,15 @@
     border: none;
     background: none;
     cursor: pointer;
+    transition: transform 0.2s ease-in-out;
 
     i {
-        font-size: 1.35rem;
+        font-size: 1.5rem;
         color: var(--icon-color);
     }
 
     &:hover {
-        transform: scale(1.1);
+        transform: scale(1.15);
     }
 }
 
