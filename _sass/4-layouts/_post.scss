@@ -58,6 +58,7 @@
     @include base-content-wrapper-style;
     max-width: 900px;
     padding: 0rem $content-horizontal-padding;
+    margin-bottom: 5rem;
 
     h1, h2, h3, h4, h5, h6 {
         margin-top: 1em;
