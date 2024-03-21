@@ -1,0 +1,23 @@
+<nav class="navbar">
+  <div class="navbar-inner">
+    <div class="navbar-title">
+      <a href="{{ site.baseurl }}/" class="navbar-image">
+        <img src="/assets/images/hero-image.png" alt="Bhumil Soni">
+      </a>
+    </div>
+    <div class="navbar-links">
+      {% for item in site.data.navigation %}
+        <a href="{{ site.baseurl }}{{ item.link }}" class="{% if page.url == item.link %}current{% endif %}">{{ item.name }}</a>
+      {% endfor %}
+      <button class="navbar-contact-button">Connect</button>
+    </div>
+    <div class="navbar-shortcuts">
+      <button class="theme-toggle">
+          <i class="theme-icon fas fa-sun"></i>
+      </button>
+    </div>
+    <button class="navbar-toggler">
+      <i class="fas fa-bars"></i>
+    </button>
+  </div>
+</nav>

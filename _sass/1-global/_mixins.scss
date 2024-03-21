@@ -1,0 +1,100 @@
+@import "1-global/variables";
+
+@mixin for-small-up { 
+    @media (min-width: $breakpoint-small-up) { 
+        @content; 
+    } 
+}
+
+@mixin for-medium-up { 
+    @media (min-width: $breakpoint-medium-up) { 
+        @content; 
+    } 
+}
+
+@mixin for-large-up { 
+    @media (min-width: $breakpoint-large-up) { 
+        @content; 
+    } 
+}
+
+@mixin for-xlarge-up { 
+    @media (min-width: $breakpoint-xlarge-up) { 
+        @content; 
+    } 
+}
+
+@mixin base-icon-style {
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+
+    i {
+        font-size: 1.5rem;
+        color: var(--icon-color);
+    }
+
+    &:hover {
+        transform: scale(1.15);
+    }
+}
+
+@mixin base-image-style {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: $border-radius;
+}
+
+@mixin base-content-wrapper-style {
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    flex: 1;
+
+    img {
+        @include base-image-style;
+    }
+}
+
+@mixin base-button-style {
+    @include font-regular-primary;
+    background: var(--button-background-color);
+    color: var(--button-text-color);
+    border: none;
+    padding: 7px 18px;
+    font-size: large;
+    border-radius: $button-border-radius;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--button-hover-background-color);
+        color: var(--button-hover-text-color);
+        text-decoration: none;
+    }
+}
+
+@mixin circular-image {
+    height: 10rem;
+    width: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    img {
+        @include base-image-style;
+    }
+}

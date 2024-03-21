@@ -1,1 +1,20 @@
-title: Bhumil Soni's Site
+title: Bhumil
+favicon: assets/images/favicon.png
+google_analytics: G-QKSS9V2W26
+
+sass:
+  sass_dir: _sass
+  style: compressed # or expanded for development
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+permalink: /posts/:title/
+
+plugins:
+  - jekyll-paginate
+
+paginate: 7
+paginate_path: "/posts/page:num/"

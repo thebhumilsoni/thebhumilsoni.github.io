@@ -1,0 +1,14 @@
+.error-page-layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+.error-code {
+  font-size: 5em;
+  margin: 0;
+  color: var(--error-code-color);
+}

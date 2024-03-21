@@ -1,0 +1,175 @@
+@import "1-global/variables";
+@import "1-global/mixins";
+
+@mixin navbar-item-style {
+    background-color: var(--navbar-item-background-color);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: var(--navbar-item-box-shadow-color);
+}
+
+.navbar {
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--navbar-background-color);
+    transition: top 0.3s ease-in-out;
+
+    &.sticky {
+        width: 100%;
+        position: fixed;
+        top: 0;
+    }
+
+    .navbar-inner {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 1.1rem $content-horizontal-padding;
+        gap: 1.5rem;
+
+        @include for-medium-up {
+            justify-content: space-between;
+            padding: 2rem $content-horizontal-padding;
+        }
+
+        .navbar-title {
+            display: flex;
+            flex: 1;
+        }
+
+        .navbar-image {
+            @include circular-image;
+            width: 3.5rem;
+            height: 3.5rem;
+            @include navbar-item-style;
+
+            img {
+                @include base-image-style;
+                height: 80%;
+                width: auto;
+                margin-top: 4px;
+            }
+        }
+
+        .navbar-links {
+            display: none;
+            opacity: 0;
+            visibility: hidden;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background-color: var(--background-color);
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 5;
+            transition: opacity 0.5s ease, visibility 0.5s ease;
+            gap: 4rem;
+
+            &.open {
+                display: flex;
+                opacity: 1;
+                visibility: visible;
+            }
+
+            @include for-medium-up {
+                display: flex;
+                opacity: 1;
+                visibility: visible;
+                position: static;
+                width: auto;
+                height: auto;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                z-index: 1;
+                gap: 1.8rem;
+                padding: 0.6rem 1.5rem 0.6rem 0.6rem;
+                border-radius: $border-radius;
+                @include navbar-item-style;
+            }
+
+            a {
+                background-color: var(--navbar-links-background-color);
+                color: var(--navbar-link-item-color);
+                text-decoration: none;
+                padding: 0.4rem 1.2rem;
+                border-radius: $border-radius;
+
+                &.current {
+                    font-weight: 600;
+                    background-color: var(--navbar-link-item-hover-color);
+                    color: var(--navbar-link-item-current-color);
+                }
+
+                &:hover {
+                    transition: all 0.3s ease;
+                    cursor: pointer;
+                    background-color: var(--navbar-link-item-hover-color);
+                }
+            }
+
+            .navbar-contact-button {
+                @include base-button-style;
+            }    
+        }
+
+        .navbar-shortcuts {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 1.5rem;
+
+            @include for-medium-up {
+                flex: 1;
+                gap: 1.75rem;
+            }
+
+            @include for-large-up {
+                gap: 2rem;
+            }
+
+            @include for-large-up {
+                gap: 2.25rem;
+            }
+        }
+
+        .theme-toggle, .navbar-toggler {
+            @include base-icon-style;
+            @include circular-image;
+            width: 3.2rem;
+            height: 3.2rem;
+            @include navbar-item-style;
+        }
+
+        .theme-toggle i {
+            font-size: 1.2rem;
+            color: var(--navbar-icon-color);
+        }
+
+        .navbar-toggler {
+            display: block;
+            z-index: 10;
+
+            i {
+                font-size: 1.5rem;
+                color: var(--navbar-icon-color);
+                transition: transform 0.3s ease, color 0.3s ease;
+            }
+
+            @include for-medium-up {
+                display: none;
+            }
+        }
+
+        .navbar-toggler.open i {
+            transform: rotate(180deg);
+        }
+    }
+}

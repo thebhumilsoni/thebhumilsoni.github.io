@@ -1,0 +1,30 @@
+---
+layout: base
+---
+<div class="default-page-header">
+  {% include navigation.html %}
+</div>
+<article class="post">
+  <header class="post-header">
+    {% if page.tags %}
+      <div class="post-tags">
+        {% for tag in page.tags %}
+          <span class="tag">{{ tag }}</span>
+        {% endfor %}
+      </div>
+    {% endif %}
+    <h1 class="post-title">{{ page.title }}</h1>
+    <div class="post-meta">
+      <time class="post-date" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d %B, %Y" }}</time>
+    </div>
+    {% if page.header %}
+    <div class="post-header-image">
+      {% assign alt_text = page.title | append: ' header' %}
+      {% include image.html src=page.header alt=alt_text %}
+    </div>
+    {% endif %}
+  </header>
+  <div class="post-content-wrapper">
+    {{ content }}
+  </div>
+</article>

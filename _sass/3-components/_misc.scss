@@ -1,0 +1,19 @@
+.section-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    position: relative;
+    width: 100%;
+}
+
+.section-header-content {
+    white-space: nowrap;
+    padding: 0 1rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--section-header-color);
+
+    @include for-medium-up {
+        font-size: 1.4rem;
+    }
+}

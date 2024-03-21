@@ -1,10 +1,45 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Home</title>
-  </head>
-  <body>
-    <h1>Hello World! 👋 </h1>
-  </body>
-</html>
+---
+layout: base
+title: Home
+---
+<div class="default-page-header">
+    <div id="dynamic-background-solid" class="dynamic-background-solid"></div>
+    {% include navigation.html %}
+    <div class="hero-container">
+        <div class="hero-content">
+            <div class="hero-image">
+                <img src="/assets/images/hero-image.png" alt="Bhumil Soni">
+            </div>
+            <h2 class="hero-introduction">Hello, I'm Bhumil 👋</h2>
+            <p class="hero-about-me">I'm a mobile app developer who loves bringing ideas to life.</p>
+            {% include social-links.html %}
+        </div>
+    </div>
+</div>
+<div class="default-content-wrapper">
+    {% assign pinned_post_found = false %}
+    {% for post in site.posts %}
+        {% if post.pinned %}
+        <div class="pinned-post-section">
+            {% include section-header.html content='<i class="fas fa-thumbtack pinned-icon"></i>' %}
+            {% include post-card.html post=post class='post-card pinned-post-card' %} 
+        </div>
+        {% assign pinned_post_found = true %}
+        {% break %}
+        {% endif %}
+    {% endfor %}
+    <br>
+    <br>
+    <br>
+    <div class="latest-posts-section">
+        {% include section-header.html content="Latest Posts" %}
+        <div class="latest-posts-grid">
+            {% for post in site.posts limit:9 %}
+                {% include post-card.html post=post class='latest-post-card' %}
+            {% endfor %}
+        </div>
+        {% if site.posts.size > 9 %}
+            <a href="/posts" class="show-all-posts-button">Show All</a>
+        {% endif %}
+    </div>
+</div>

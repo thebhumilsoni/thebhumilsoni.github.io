@@ -1,0 +1,102 @@
+@import "1-global/mixins";
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--heading-text-color);
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    padding: 0;
+}
+
+ul, ol {
+    padding-left: 1.25rem;
+}
+
+li {
+    margin-bottom: 0.5em;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    
+    &:hover {
+        font-weight: 600;
+        text-decoration: none;
+    }
+}
+
+table {
+    border-collapse: separate;
+    border: solid var(--table-border-color) 1px;
+    border-radius: $border-radius;
+    width: auto;
+    margin: 0 auto;
+
+    th, td {
+        border-left: solid var(--th-border-color) 1px;
+        border-top: solid var(--td-border-color) 1px;
+        padding: 0.5rem;
+        text-align: center;
+    }
+
+    th {
+        border-top: none;
+    }
+
+    td:first-child, th:first-child {
+        border-left: none;
+    }
+}
+
+blockquote {
+    padding-left: 1rem;
+    margin-left: 0;
+    border-left: 5px solid var(--primary-light-color);
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.default-content-wrapper {
+    @include base-content-wrapper-style;
+    padding: 1rem $content-horizontal-padding;
+    max-width: $content-max-width;
+    flex: 1;
+    margin-bottom: 8rem;
+    overflow: hidden;
+}
+
+.default-page-header {
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .default-header-content {
+        width: 100%;
+        margin: 0 auto;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        padding: 0rem $content-horizontal-padding;
+        max-width: $content-max-width;
+        padding-top: 0.2rem;
+        padding-bottom: 0.2rem;
+    }
+}
+
+.divider {
+    height: 0.8px;
+    background-color: var(--divider-color);
+    flex-grow: 1;
+}

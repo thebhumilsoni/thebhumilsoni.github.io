@@ -1,0 +1,32 @@
+---
+layout: base
+title: Posts
+---
+{% include default-page-header.html %}
+<div class="default-content-wrapper">
+  <div class="posts-grid">
+    {% for post in paginator.posts %}
+    {% include post-card.html post=post %}
+    {% endfor %}
+  </div>
+  <br>
+  <div class="pagination">
+    {% if paginator.total_pages > 1 %}
+      {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="previous">Previous</a>
+      {% endif %}
+      {% for page in (1..paginator.total_pages) %}
+        {% if page == 1 %}
+          <a href="{{ '/posts/' | prepend: site.baseurl }}" class="{% if page == paginator.page %}current{% endif %}">1</a>
+        {% else %}
+          <a href="{{ '/posts/page' | append: page | prepend: site.baseurl }}" class="{% if page == paginator.page %}current{% endif %}">{{ page }}</a>
+        {% endif %}
+      {% endfor %}
+      {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="next">Next</a>
+      {% endif %}
+    {% else %}
+      <a href="{{ '/posts/' | prepend: site.baseurl }}" class="current">1</a>
+    {% endif %}
+  </div>
+</div>

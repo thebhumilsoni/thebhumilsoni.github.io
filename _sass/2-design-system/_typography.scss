@@ -1,0 +1,130 @@
+@import "1-global/mixins";
+
+@font-face {
+    font-family: 'Geist Mono';
+    src: url('/assets/fonts/GeistMono-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+$font-primary: 'Nunito', sans-serif;
+$font-code: 'Geist Mono', monospace;
+$font-primary-light: 300;
+$font-primary-regular: 400;
+$font-primary-regular-italic: 400;
+$font-primary-bold: 700;
+
+@mixin font-light-primary {
+    font-family: $font-primary;
+    font-weight: $font-primary-light;
+}
+
+@mixin font-regular-primary {
+    font-family: $font-primary;
+    font-weight: $font-primary-regular;
+}
+
+@mixin font-bold-primary {
+    font-family: $font-primary;
+    font-weight: $font-primary-bold;
+}
+
+body {
+    @include font-regular-primary;
+    font-size: 1.05rem;
+    line-height: 1.6;
+
+    @include for-medium-up {
+        font-size: 1.075rem;
+    }
+
+    @include for-large-up {
+        font-size: 1.1rem;
+    }
+
+    @include for-xlarge-up {
+        font-size: 1.125rem;
+    }
+}
+
+h1 {
+    @include font-bold-primary;
+    font-size: 1.7rem;
+
+    @include for-medium-up {
+        font-size: 1.9rem;
+    }
+
+    @include for-large-up {
+        font-size: 2.05rem;
+    }
+
+    @include for-xlarge-up {
+        font-size: 2.2rem;
+    }
+}
+
+h2 {
+    @include font-bold-primary;
+    font-size: 1.55rem;
+
+    @include for-medium-up {
+        font-size: 1.7rem;
+    }
+
+    @include for-large-up {
+        font-size: 1.85rem;
+    }
+}
+
+h3 {
+    @include font-regular-primary;
+    font-size: 1.35rem;
+    font-weight: bold;
+
+    @include for-medium-up {
+        font-size: 1.45rem;
+    }
+
+    @include for-large-up {
+        font-size: 1.55rem;
+    }
+}
+
+h4 {
+    @include font-regular-primary;
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    @include for-medium-up {
+        font-size: 1.4rem;
+    }
+}
+
+h5 {
+    @include font-regular-primary;
+    font-size: 1rem;
+    font-weight: 600;
+
+    @include for-medium-up {
+        font-size: 1.25rem;
+    }
+}
+
+h6 {
+    @include font-regular-primary;
+    font-size: 0.875rem;
+
+    @include for-medium-up {
+        font-size: 1rem;
+    }
+}
+
+p, blockquote, a, li {
+    @include font-regular-primary;
+}
+
+blockquote {
+    font-size: 1em;
+    font-style: italic;
+}

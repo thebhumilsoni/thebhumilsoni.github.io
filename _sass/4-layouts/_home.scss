@@ -1,0 +1,204 @@
+.home-content-wrapper {
+    @include base-content-wrapper-style;
+    position: relative;
+    padding: 0;
+    max-width: 100%;
+}
+
+.hero-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2.5rem 0;
+
+    @include for-small-up {
+        padding: 3rem 0;
+    }
+
+    @include for-medium-up {
+        padding: 3.5rem 0;
+    }
+
+    @include for-large-up {
+        padding: 4rem 0;
+    }
+}
+
+.dynamic-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: transparent;
+}
+
+.dynamic-background-solid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+    pointer-events: none;
+    gap: 0.9rem;
+    max-width: $content-max-width;
+    padding: 0 $content-horizontal-padding;
+
+    h1, h2, h3, h4, h5, h6, p {
+        width: fit-content;
+        cursor: text;
+        pointer-events: auto;
+    }
+
+    a, button, img {
+        cursor: pointer;
+        pointer-events: auto;
+    }
+
+    .hero-image {
+        @include circular-image;
+        background-color: var(--hero-image-background-color);
+        margin-bottom: 1.2rem;
+
+        img {
+            margin-top: 1.1rem;
+            margin-right: 0.2rem;
+        }
+    }
+
+    .hero-introduction {
+        margin: 0 auto;
+    }
+
+    .hero-about-me {
+        font-size: 1.3rem;
+        color: var(--text-secondary-color);
+        margin: 0 auto;
+
+        @include for-medium-up {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.home-content {
+    @include base-content-wrapper-style;
+    max-width: $content-max-width;
+    padding: 0rem $content-horizontal-padding;
+}
+
+// Pinned post styles
+
+.pinned-post-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    @include for-medium-up {
+        gap: 2.5rem;
+    }
+}
+
+.pinned-icon {
+    font-size: 1.35rem;
+}
+
+.pinned-post-card {
+    // Styles for small screens remain the same
+
+    @include for-small-up {
+        .post-card-title {
+            font-size: 1.2rem;
+        }
+
+        .post-card-summary {
+            font-size: 1.05rem;
+        }
+    }
+
+    @include for-medium-up {
+        grid-template-columns: 50% 50%;
+
+        .post-card-image {
+            min-height: 20rem;
+        }
+
+        .post-card-details {
+            padding: 2rem;
+            display: flex;
+            justify-content: center;
+            gap: 0.8rem;
+
+            .post-card-title {
+                font-size: 1.3rem;
+            }
+
+            .post-card-summary {
+                font-size: 1.1rem;
+            }
+        }
+
+        .post-card-date {
+            font-size: 1.02rem;
+        }
+    }
+}
+
+// Latest post styles
+
+.latest-posts-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    @include for-medium-up {
+        gap: 2.5rem;
+    }
+}
+
+.latest-posts-grid {
+    display: grid;
+    grid-gap: 2rem;
+    justify-content: center;
+
+    @include for-small-up {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    @include for-medium-up {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    @include for-large-up {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+
+.latest-post-card {
+    @extend .post-card;
+
+    @include for-medium-up {
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px 1fr;
+    }
+}
+
+.show-all-posts-button {
+    @include base-button-style;
+    margin: 0 auto;
+    padding: 0.8rem 1.3rem;
+}
